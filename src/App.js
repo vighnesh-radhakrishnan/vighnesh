@@ -1,11 +1,23 @@
 import React from "react";
+import Home from "./Components/Home";
+import About from "./Components/About";
+import Experience from "./Components/Experience";
+import Projects from "./Components/Projects";
+import Navbar from "./Navbar";
+import { BrowserRouter as Router } from "react-router-dom";
 
-function App() {
+const App = () => {
   return (
-    <div>
-      <h1>Welcome to My Personal Website</h1>
-    </div>
+    <Router>
+      <div className="app">
+        <Navbar />
+        <Home />
+        <About />
+        <Experience />
+        <Projects />
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;
