@@ -1,10 +1,11 @@
 import React from "react";
+import { StyledSection } from "./Container";
 
 const Home = () => (
-  <section id="home" className="section">
+  <StyledSection id="home">
     <h1>Home</h1>
     <p>Welcome to my personal website.</p>
-  </section>
+  </StyledSection>
 );
 
 export default Home;

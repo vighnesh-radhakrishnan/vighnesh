@@ -1,9 +1,9 @@
 import React from "react";
-
+import { StyledSection } from "./Container";
 const About = () => (
-  <section id="about" className="section">
+  <StyledSection id="about">
     <h1>About Me</h1>
     <p>This is the About section.</p>
-  </section>
+  </StyledSection>
 );
 export default About;

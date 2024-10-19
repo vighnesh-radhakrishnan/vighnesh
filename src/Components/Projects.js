@@ -1,10 +1,11 @@
 import React from "react";
+import { StyledSection } from "./Container";
 
 const Projects = () => (
-  <section id="projects" className="section">
+  <StyledSection id="projects">
     <h1>Projects</h1>
     <p>Here are some of my projects.</p>
-  </section>
+  </StyledSection>
 );
 
 export default Projects;

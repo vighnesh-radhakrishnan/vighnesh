@@ -12,29 +12,6 @@ body {
   background: transparent;
 }
 
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 10px 0;
-  display: flex;
-  justify-content: center;
-  z-index: 1000;
-}
-
-.navbar ul {
-  list-style-type: none;
-  display: flex;
-  gap: 20px;
-}
-
-.navbar a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-}
-
 h1 {
   font-size: 3rem;
   text-align: center;

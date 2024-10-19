@@ -1,10 +1,11 @@
 import React from "react";
+import { StyledSection } from "./Container";
 
 const Experience = () => (
-  <section id="experience" className="section">
+  <StyledSection id="experience">
     <h1>Experience</h1>
     <p>This section covers my professional experience.</p>
-  </section>
+  </StyledSection>
 );
 
 export default Experience;
