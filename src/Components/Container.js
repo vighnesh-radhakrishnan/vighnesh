@@ -84,6 +84,22 @@ export const NavbarWrapper = styled.section`
   }
 `;
 
+export const FooterWrapper = styled.footer`
+  width: 100%;
+  padding: 20px 0;
+  color: #d5def5;
+  text-align: center;
+  font-size: 0.8rem;
+  bottom: 0;
+  left: 0;
+
+  a {
+    text-decoration: none;
+    color: #a4fbe3;
+    font-weight: bold;
+  }
+`;
+
 export const GradientBackground = styled.div`
   transition: background 0.2s ease-in-out;
   /* background: linear-gradient(
