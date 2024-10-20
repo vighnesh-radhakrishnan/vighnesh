@@ -23,6 +23,59 @@ export const StyledSection = styled.section`
   }
 `;
 
+export const HomeWrapper = styled.section`
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+
+  h1 {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #d5def5;
+  }
+
+  .name-text {
+    color: #95e8d7;
+  }
+
+  .bio-text {
+    font-size: 1rem;
+    text-align: center;
+    max-width: 600px;
+    color: #d5def5;
+    margin: 10px 0;
+  }
+
+  .intro-text {
+    font-size: 2rem;
+    text-align: center;
+    max-width: 700px;
+    color: #d5def5;
+    margin: 10px 0;
+  }
+
+  .cursor {
+    animation: blink 1s infinite;
+    color: #95e8d7;
+  }
+
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+`;
+
 export const NavbarWrapper = styled.section`
   .navbar-container {
     display: flex;
