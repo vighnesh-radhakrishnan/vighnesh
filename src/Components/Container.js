@@ -29,12 +29,12 @@ export const HomeWrapper = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px;
+  text-align: center;
+  padding: 0 20px;
 
   h1 {
-    font-size: 4rem;
-    text-align: center;
-    margin-bottom: 10px;
+    font-size: 5rem;
+    line-height: 1.2;
     color: #d5def5;
   }
 
@@ -42,20 +42,19 @@ export const HomeWrapper = styled.section`
     color: #95e8d7;
   }
 
-  .bio-text {
-    font-size: 1rem;
-    text-align: center;
-    max-width: 600px;
-    color: #d5def5;
-    margin: 10px 0;
-  }
-
   .intro-text {
     font-size: 2rem;
-    text-align: center;
+    font-weight: 400;
     max-width: 700px;
+    margin: 0 0 10px 0;
     color: #d5def5;
-    margin: 10px 0;
+  }
+
+  .bio-text {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin-top: 15px;
+    color: #d5def5;
   }
 
   .cursor {
@@ -64,14 +63,12 @@ export const HomeWrapper = styled.section`
   }
 
   @keyframes blink {
-    0% {
+    0%,
+    100% {
       opacity: 1;
     }
     50% {
       opacity: 0;
-    }
-    100% {
-      opacity: 1;
     }
   }
 `;

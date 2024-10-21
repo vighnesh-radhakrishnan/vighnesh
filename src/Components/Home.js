@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { HomeWrapper } from "./Container";
 
 const Home = () => {
   return (
     <HomeWrapper id="home">
       <h1>
-        Hi, I'm <span className="name-text">Vighnesh</span>.
+        Hi, I'm <span className="name-text">Vighnesh</span>
         <span className="cursor">|</span>
       </h1>
       <p className="intro-text">I make things. Sometimes, they even work.</p>
@@ -14,7 +14,6 @@ const Home = () => {
         engineering. I love creating innovative solutions that make a
         difference.
       </p>
-      {/* <p>Currently working as a Software Engineer at View26.</p> */}
     </HomeWrapper>
   );
 };
