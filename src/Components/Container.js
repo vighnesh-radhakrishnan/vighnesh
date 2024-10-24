@@ -31,7 +31,7 @@ export const HomeWrapper = styled.section`
   align-items: center;
   text-align: center;
   padding: 0 20px;
-
+  font-family: "NTR";
   h1 {
     font-size: 5rem;
     line-height: 1.2;
