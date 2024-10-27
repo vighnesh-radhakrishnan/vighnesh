@@ -114,6 +114,13 @@ export const NavbarWrapper = styled.section`
     font-size: 0.9rem;
   }
 
+  .navbar-left a.pages.active {
+    color: #a4fbe3;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+  }
+
   .navbar-left a.pages:hover {
     color: #a4fbe3;
   }
