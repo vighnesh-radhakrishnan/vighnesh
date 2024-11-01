@@ -32,42 +32,45 @@ export const HomeWrapper = styled.section`
   text-align: center;
   padding: 0 20px;
   font-family: "NTR";
+
   h1 {
-    font-size: 5rem;
+    font-size: 4.5rem;
     line-height: 1.2;
-    color: #d5def5;
+    color: #f0f4ff;
+    margin-bottom: 10px;
   }
 
   .name-text {
-    color: #95e8d7;
+    color: #69dbb7;
   }
 
   .intro-text {
-    font-size: 2rem;
-    font-weight: 400;
+    font-size: 1.8rem;
+    font-weight: 500;
     max-width: 700px;
-    margin: 0 0 10px 0;
-    color: #d5def5;
+    margin: 5px 0 15px;
+    color: #a6bce3;
   }
 
   .bio-text {
     font-size: 1.2rem;
     max-width: 600px;
-    margin-top: 15px;
-    color: #d5def5;
+    margin-top: 10px;
+    color: #c8d4f4;
   }
 
   .cursor {
-    animation: blink 1s infinite;
-    color: #95e8d7;
+    animation: blink 1s steps(2) infinite;
+    color: #69dbb7;
   }
 
   @keyframes blink {
     0%,
-    100% {
+    50% {
       opacity: 1;
     }
-    50% {
+    50.1%,
+    100% {
       opacity: 0;
     }
   }
