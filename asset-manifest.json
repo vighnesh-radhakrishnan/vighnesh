@@ -1,17 +1,18 @@
 {
   "files": {
     "main.css": "/vighnesh/static/css/main.c7dfcfae.css",
-    "main.js": "/vighnesh/static/js/main.805caa3b.js",
+    "main.js": "/vighnesh/static/js/main.60cb15c4.js",
     "static/js/453.6a0d684f.chunk.js": "/vighnesh/static/js/453.6a0d684f.chunk.js",
     "index.html": "/vighnesh/index.html",
     "static/media/Github.svg": "/vighnesh/static/media/Github.88069da821313a6a6dc6265334e739e1.svg",
     "static/media/LinkedIn.svg": "/vighnesh/static/media/LinkedIn.8efbda9905a988e5ed31edfb585fe63f.svg",
+    "static/media/Medium.svg": "/vighnesh/static/media/Medium.95077b5e74c0cc77c241f7a2c9ca4e43.svg",
     "main.c7dfcfae.css.map": "/vighnesh/static/css/main.c7dfcfae.css.map",
-    "main.805caa3b.js.map": "/vighnesh/static/js/main.805caa3b.js.map",
+    "main.60cb15c4.js.map": "/vighnesh/static/js/main.60cb15c4.js.map",
     "453.6a0d684f.chunk.js.map": "/vighnesh/static/js/453.6a0d684f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c7dfcfae.css",
-    "static/js/main.805caa3b.js"
+    "static/js/main.60cb15c4.js"
   ]
 }
