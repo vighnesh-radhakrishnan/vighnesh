@@ -201,6 +201,65 @@ export const HomeWrapper = styled.section`
     color: #69dbb7;
   }
 
+  .skills {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 1.2s ease-out;
+
+    p {
+      font-size: 1rem;
+      color: #69dbb7;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      font-size: 1.2rem;
+      color: #c8d4f4;
+      background: rgba(255, 255, 255, 0.07);
+      padding: 10px 15px;
+      border-radius: 8px;
+      transition: transform 0.3s ease, background 0.3s ease;
+
+      &:hover {
+        color: #5fc9f3;
+        background: rgba(255, 255, 255, 0.15);
+        transform: translateY(-4px);
+      }
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
   @keyframes blink {
     0%,
     50% {

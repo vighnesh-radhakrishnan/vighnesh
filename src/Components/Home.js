@@ -16,6 +16,16 @@ const Home = () => {
         innovation. I build solutions that solve problems and bring ideas to
         life.
       </p>
+      <div className="skills">
+        <p>Technologies I'm proficient in:</p>
+        <ul>
+          <li>JavaScript ES6+</li>
+          <li>TypeScript</li>
+          <li>React</li>
+          <li>Node.js</li>
+          <li>C++</li>
+        </ul>
+      </div>
     </HomeWrapper>
   );
 };
