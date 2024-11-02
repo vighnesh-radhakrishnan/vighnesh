@@ -64,7 +64,7 @@ export const AboutWrapper = styled.section`
       padding: 15px;
       border-radius: 12px;
       transition: transform 0.3s ease, background 0.3s ease;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 
       &:hover {
         transform: translateY(-8px);
@@ -202,22 +202,27 @@ export const HomeWrapper = styled.section`
   }
 
   .skills {
-    margin-top: 30px;
+    margin-top: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
     animation: fadeIn 1.2s ease-out;
 
     p {
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       font-weight: bold;
       color: #69dbb7;
-      margin-bottom: 15px;
+      margin-bottom: 25px;
       letter-spacing: 1px;
+      /* text-transform: uppercase; */
+      background: linear-gradient(135deg, #5fc9f3, #69dbb7);
+      -webkit-background-clip: text;
+      color: transparent;
     }
+
     ul {
       display: flex;
-      gap: 15px;
+      gap: 25px;
       list-style: none;
       padding: 0;
       margin: 0;
@@ -225,17 +230,19 @@ export const HomeWrapper = styled.section`
     }
 
     li {
-      font-size: 1rem;
+      font-size: 1.1rem;
       color: #69dbb7;
       background: linear-gradient(135deg, #333f58, #2e3547);
-      padding: 8px 14px;
-      border-radius: 20px;
-      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
-      transition: all 0.3s ease;
+      padding: 10px 18px;
+      border-radius: 25px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, background 0.3s ease;
       cursor: pointer;
+      display: flex;
+      align-items: center;
 
       &:hover {
-        transform: translateY(-3px);
+        transform: translateY(-5px) scale(1.05);
         background: linear-gradient(135deg, #5fc9f3, #69dbb7);
         color: #fff;
       }
