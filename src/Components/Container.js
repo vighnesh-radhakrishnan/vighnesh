@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledSection = styled.section`
-  height: 100vh;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,6 +20,134 @@ export const StyledSection = styled.section`
     text-align: center;
     max-width: 800px;
     color: #d5def5;
+  }
+`;
+
+export const AboutWrapper = styled.section`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  text-align: center;
+  font-family: "Helvetica Neue", sans-serif;
+
+  h1 {
+    font-size: 3.5rem;
+    color: #f0f4ff;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-out;
+    font-family: "NTR";
+  }
+
+  p {
+    font-size: 1.5rem;
+    max-width: 700px;
+    color: #a6bce3;
+    margin: 5px 0;
+    line-height: 1.6;
+    animation: slideIn 1s ease-out;
+  }
+
+  .favorites {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+    animation: fadeIn 1.2s ease-out;
+
+    .favorite-item {
+      background: rgba(255, 255, 255, 0.07);
+      padding: 15px;
+      border-radius: 12px;
+      transition: transform 0.3s ease, background 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+      &:hover {
+        transform: translateY(-8px);
+        background: rgba(255, 255, 255, 0.15);
+      }
+
+      h3 {
+        font-size: 1.2rem;
+        color: #69dbb7;
+        margin-bottom: 8px;
+        font-weight: 600;
+      }
+
+      p,
+      ul {
+        font-size: 1rem;
+        color: #c8d4f4;
+        margin: 0;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      li {
+        margin-bottom: 5px;
+        display: flex;
+        align-items: center;
+
+        &::before {
+          content: "•";
+          color: #69dbb7;
+          margin-right: 8px;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @media (min-width: 768px) {
+    padding: 0 40px;
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.3rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    padding: 0 60px;
+
+    h1 {
+      font-size: 4rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+    }
   }
 `;
 
@@ -53,10 +181,11 @@ export const HomeWrapper = styled.section`
   }
 
   .bio-text {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     max-width: 600px;
     margin-top: 10px;
     color: #c8d4f4;
+    font-family: "Helvetica Neue", sans-serif;
   }
 
   .cursor {
