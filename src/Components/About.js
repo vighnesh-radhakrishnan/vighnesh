@@ -4,19 +4,20 @@ import { AboutWrapper } from "./Container";
 
 const About = () => (
   <AboutWrapper id="about">
-    <h1>About Me</h1>
+    <h1>/ about me</h1>
     <p>
       I’m currently a Software Developer at View26, where I focus on crafting
       seamless user experiences and building scalable software solutions.
-      Outside of work, I unwind by exploring new music, getting lost in
-      immersive video games, and watching my favorite sports, like football and
-      Formula 1.
+    </p>
+    <p>
+      Outside of work, I unwind with good music, a great book, epic video games,
+      and catching up on football and Formula 1.
     </p>
     <p>Here are some of my favorite things:</p>
 
     <div className="favorites">
       <div className="favorite-item">
-        <h3>Musician</h3>
+        <h3>Music Artists</h3>
         <ul>
           <li>Kendrick Lamar</li>
           <li>Twenty One Pilots</li>
@@ -24,7 +25,6 @@ const About = () => (
           <li>Ling Tosite Sigure</li>
         </ul>
       </div>
-
       <div className="favorite-item">
         <h3>Games</h3>
         <ul>
@@ -34,32 +34,35 @@ const About = () => (
           <li>Uncharted</li>
         </ul>
       </div>
+
+      <div className="favorite-item">
+        <h3>Movies and Animes</h3>
+        <p>Lord Of The Rings</p>
+        <p>Harry Potter </p>
+        <p>Cowboy Bebop</p>
+        <p>Bleach</p>
+      </div>
+
       <div className="favorite-item">
         <h3>Books</h3>
         <ul>
           <li>Feluda</li>
-          <li>The Prophet</li>
           <li>Tomorrow, and Tomorrow, and Tomorrow</li>
         </ul>
       </div>
 
       <div className="favorite-item">
-        <h3>Football Club</h3>
+        <h3>Football</h3>
         <p>Manchester United</p>
-      </div>
-
-      <div className="favorite-item">
-        <h3>Football Player</h3>
         <p>Wayne Rooney</p>
       </div>
-
+      {/* <div className="favorite-item">
+        <h3>Football Player</h3>
+        <p>Wayne Rooney</p>
+      </div> */}
       <div className="favorite-item">
-        <h3>F1 Team</h3>
+        <h3>F1</h3>
         <p>Ferrari</p>
-      </div>
-
-      <div className="favorite-item">
-        <h3>F1 Driver</h3>
         <p>Lewis Hamilton</p>
       </div>
     </div>
