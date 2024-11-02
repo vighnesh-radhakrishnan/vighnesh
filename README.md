@@ -9,4 +9,4 @@ Experience: Highlights of my professional journey and key achievements.
 Projects: A collection of projects I’ve worked on, with links to live demos and code repositories.
 Social Links: Quick access to my GitHub and LinkedIn.
 
-[Visit my website]((https://yourwebsite.com](https://vikkujonsnow.github.io/vighnesh/)
+[Visit my website](https://vikkujonsnow.github.io/vighnesh/)
