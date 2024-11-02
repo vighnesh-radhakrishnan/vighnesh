@@ -43,7 +43,7 @@ export const AboutWrapper = styled.section`
   p {
     font-size: 1.5rem;
     max-width: 700px;
-    color: #a6bce3;
+    color: #c8d4f4;
     margin: 5px 0;
     line-height: 1.6;
     animation: slideIn 1s ease-out;

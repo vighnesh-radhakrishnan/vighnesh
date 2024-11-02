@@ -16,7 +16,7 @@ const About = () => (
 
     <div className="favorites">
       <div className="favorite-item">
-        <h3>Favorite Musician</h3>
+        <h3>Musician</h3>
         <ul>
           <li>Kendrick Lamar</li>
           <li>Twenty One Pilots</li>
@@ -26,7 +26,7 @@ const About = () => (
       </div>
 
       <div className="favorite-item">
-        <h3>Favorite Games</h3>
+        <h3>Games</h3>
         <ul>
           <li>The Witcher 3</li>
           <li>Red Dead Redemption 2</li>
@@ -35,7 +35,7 @@ const About = () => (
         </ul>
       </div>
       <div className="favorite-item">
-        <h3>Favorite Books</h3>
+        <h3>Books</h3>
         <ul>
           <li>Feluda</li>
           <li>The Prophet</li>
@@ -44,22 +44,22 @@ const About = () => (
       </div>
 
       <div className="favorite-item">
-        <h3>Favorite Football Club</h3>
+        <h3>Football Club</h3>
         <p>Manchester United</p>
       </div>
 
       <div className="favorite-item">
-        <h3>Favorite Football Player</h3>
+        <h3>Football Player</h3>
         <p>Wayne Rooney</p>
       </div>
 
       <div className="favorite-item">
-        <h3>Favorite F1 Team</h3>
+        <h3>F1 Team</h3>
         <p>Ferrari</p>
       </div>
 
       <div className="favorite-item">
-        <h3>Favorite F1 Driver</h3>
+        <h3>F1 Driver</h3>
         <p>Lewis Hamilton</p>
       </div>
     </div>
