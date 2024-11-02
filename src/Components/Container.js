@@ -91,7 +91,7 @@ export const AboutWrapper = styled.section`
 
       li {
         margin-bottom: 5px;
-        display: flex;
+        /* display: flex; */
         align-items: center;
 
         &::before {
