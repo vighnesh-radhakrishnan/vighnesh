@@ -24,6 +24,7 @@ export const StyledSection = styled.section`
 `;
 
 export const AboutWrapper = styled.section`
+  min-height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -55,7 +56,7 @@ export const AboutWrapper = styled.section`
     gap: 20px;
     width: 100%;
     max-width: 800px;
-    margin-top: 20px;
+    margin-top: 40px;
     animation: fadeIn 1.2s ease-out;
 
     .favorite-item {
@@ -83,6 +84,9 @@ export const AboutWrapper = styled.section`
         color: #c8d4f4;
         margin: 0;
       }
+      p:hover {
+        color: #5fc9f3;
+      }
 
       ul {
         list-style: none;
@@ -99,6 +103,10 @@ export const AboutWrapper = styled.section`
           color: #69dbb7;
           margin-right: 8px;
           font-size: 1.2rem;
+        }
+
+        &:hover {
+          color: #5fc9f3;
         }
       }
     }
