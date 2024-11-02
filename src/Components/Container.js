@@ -207,17 +207,17 @@ export const HomeWrapper = styled.section`
     flex-direction: column;
     align-items: center;
     animation: fadeIn 1.2s ease-out;
+    font-family: "Helvetica Neue", sans-serif;
 
     p {
       font-size: 1.4rem;
-      font-weight: bold;
-      color: #69dbb7;
+      /* font-weight: bold; */
       margin-bottom: 25px;
       letter-spacing: 1px;
       /* text-transform: uppercase; */
-      background: linear-gradient(135deg, #5fc9f3, #69dbb7);
+      /* background: linear-gradient(135deg, #5fc9f3, #69dbb7); */
       -webkit-background-clip: text;
-      color: transparent;
+      color: #c8d4f4;
     }
 
     ul {
