@@ -5,14 +5,22 @@ import { ReactComponent as LinkedInIcon } from "./Icons/LinkedIn.svg";
 import { ReactComponent as MediumIcon } from "./Icons/Medium.svg";
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState("");
-
   const handleScroll = () => {
     const sections = document.querySelectorAll("section");
     let currentSection = "";
+    const navbarHeight = 100; // Adjust this value to match your navbar height
 
     sections.forEach((section) => {
       const sectionTop = section.getBoundingClientRect().top;
+      const sectionBottom = section.getBoundingClientRect().bottom;
+
+      // Check if the section is in view and not cropped by the navbar
       if (sectionTop >= 0 && sectionTop < window.innerHeight / 2) {
+        currentSection = section.getAttribute("id");
+      } else if (
+        sectionBottom >= navbarHeight &&
+        sectionBottom < window.innerHeight / 2
+      ) {
         currentSection = section.getAttribute("id");
       }
     });
@@ -96,7 +104,7 @@ const Navbar = () => {
             href="https://medium.com/@vighnesh7radhakrishnan"
             aria-label="Medium"
           >
-            <MediumIcon className="icons" width="23px" height="23px" />
+            <MediumIcon width="23px" height="23px" />
           </a>
         </nav>
       </nav>
