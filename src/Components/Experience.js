@@ -5,21 +5,21 @@ const experiences = {
   experience1: {
     heading1: "Software Developer at ",
     heading2: "View26 GmbH / Actiotech",
-    time: "Aug 2021 - Present",
+    time: "August 2021 - Present",
     description: [
-      "At View26, I focused on crafting seamless user experiences and building scalable software solutions.",
-      "My work involved a mix of frontend development and collaborating closely with the design team to ensure a smooth interface.",
-      "This role allowed me to dive deep into user-centered design while also exploring best practices in performance optimization and modern web technologies.",
+      "Led the end-to-end development of the flagship application VIEW26, utilizing D3.js, React, and TypeScript to transform complex data into visual insights.",
+      "Developed dynamic filter components that enhanced dashboard personalization, significantly improving reporting efficiency and usability through continuous client collaboration.",
+      "Oversaw project planning, resource management, and quality assurance for various projects while mentoring junior developers in software design and development best practices.",
+      "Managed the codebase to ensure high quality and collaborated with product managers, designers, and stakeholders to gather and translate project requirements.",
     ],
   },
   experience2: {
     heading1: "Intern at",
-    heading2: "Melwa",
+    heading2: "Melwire Rolling (Pvt) Ltd",
     time: "June 2020 - July 2020",
     description: [
-      "During my time at Actiotech, I worked on building user interfaces for enterprise applications.",
-      "I gained valuable hands-on experience with React, TypeScript, and enhancing user workflows.",
-      "This internship helped me understand the startup environment, allowing me to work directly with clients and contribute to product development from the ground up.",
+      "Gained hands-on experience in key concepts such as Rolling Mill operations, Industrial Networking, PLC Programming, Instrumentation, and Industrial Automation.",
+      "Utilized technologies including Siemens PLC, Profibus, and Profinet to enhance understanding of automation processes.",
     ],
   },
 };

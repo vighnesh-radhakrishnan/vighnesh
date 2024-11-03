@@ -326,7 +326,7 @@ export const StyledExperienceSection = styled.section`
       color: #69dbb7;
       border-right-color: #69dbb7;
       font-weight: bold;
-      transition: top 0.3s ease, height 0.3s ease;
+      transition: color 0.7s ease-in-out, border-right-color 0.7 ease-in-out;
     }
   }
 
