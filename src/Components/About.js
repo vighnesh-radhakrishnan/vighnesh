@@ -37,10 +37,12 @@ const About = () => (
 
       <div className="favorite-item">
         <h3>Movies and Animes</h3>
-        <p>Lord Of The Rings</p>
-        <p>Harry Potter </p>
-        <p>Cowboy Bebop</p>
-        <p>Bleach</p>
+        <ul>
+          <li>Lord Of The Rings</li>
+          <li>Harry Potter </li>
+          <li>Cowboy Bebop</li>
+          <li>Bleach</li>
+        </ul>
       </div>
 
       <div className="favorite-item">
@@ -53,8 +55,10 @@ const About = () => (
 
       <div className="favorite-item">
         <h3>Football</h3>
-        <p>Manchester United</p>
-        <p>Wayne Rooney</p>
+        <ul>
+          <li>Manchester United</li>
+          <li>Wayne Rooney</li>
+        </ul>
       </div>
       {/* <div className="favorite-item">
         <h3>Football Player</h3>
@@ -62,8 +66,10 @@ const About = () => (
       </div> */}
       <div className="favorite-item">
         <h3>F1</h3>
-        <p>Ferrari</p>
-        <p>Lewis Hamilton</p>
+        <ul>
+          <li>Ferrari</li>
+          <li>Lewis Hamilton</li>
+        </ul>
       </div>
     </div>
   </AboutWrapper>

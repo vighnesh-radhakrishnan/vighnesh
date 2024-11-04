@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import { StyledExperienceSection } from "./Container";
+import { ExperienceSection } from "./Container";
 
 const experiences = {
   experience1: {
@@ -47,7 +47,7 @@ const Experience = () => {
   const activeExperience = experiences[activeTab];
 
   return (
-    <StyledExperienceSection id="experience">
+    <ExperienceSection id="experience">
       <h1>/ experience</h1>
       <div className="content-wrapper">
         <div className="sidebar">
@@ -75,7 +75,7 @@ const Experience = () => {
           </ul>
         </div>
       </div>
-    </StyledExperienceSection>
+    </ExperienceSection>
   );
 };
 
