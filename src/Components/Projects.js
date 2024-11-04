@@ -21,7 +21,7 @@ const projects = [
 
 const Projects = () => (
   <StyledSection id="projects">
-    <h1>projects</h1>
+    <h1>/ projects</h1>
     <p>Check out some of the cool projects I've worked on!</p>
     <ProjectGrid>
       {projects.map((project, index) => (

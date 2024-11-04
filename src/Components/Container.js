@@ -4,15 +4,16 @@ export const StyledSection = styled.section`
   min-height: 50vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 50px;
+  padding: 0 60px;
+  padding-top: 60px;
 
   h1 {
-    font-size: 3rem;
-    text-align: center;
-    margin-bottom: 20px;
-    color: #d5def5;
+    font-size: 3.5rem;
+    color: #f0f4ff;
+    margin-bottom: 30px;
+    animation: fadeIn 1s ease-out;
+    font-family: "NTR";
   }
 
   p {
@@ -282,11 +283,12 @@ export const StyledExperienceSection = styled.section`
   color: #d5def5;
   min-height: 30vh;
   margin-top: 60px;
+  margin-bottom: 60px;
 
   h1 {
     font-size: 3.5rem;
     color: #f0f4ff;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     animation: fadeIn 1s ease-out;
     font-family: "NTR";
   }
