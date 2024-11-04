@@ -21,8 +21,8 @@ const projects = [
 
 const Projects = () => (
   <StyledSection id="projects">
-    <h1>Projects</h1>
-    <p>Here are some of my projects.</p>
+    <h1>projects</h1>
+    <p>Check out some of the cool projects I've worked on!</p>
     <ProjectGrid>
       {projects.map((project, index) => (
         <ProjectCard key={index}>
