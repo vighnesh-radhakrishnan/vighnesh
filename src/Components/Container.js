@@ -669,10 +669,9 @@ export const NavbarWrapper = styled.section`
     fill: #a4fbe3;
   }
 
-  /* @media (max-width: 768px) {
+  @media (max-width: 768px) {
     .navbar-container {
-      flex-direction: column;
-      padding: 15px;
+      padding: 20px;
     }
 
     .navbar-left {
@@ -701,12 +700,12 @@ export const NavbarWrapper = styled.section`
       width: 20px;
       height: 20px;
     }
-  } */
+  }
 
-  /* .menu-icon {
+  .menu-icon {
     display: none;
     cursor: pointer;
-  } */
+  }
 
   .sidebar {
     position: fixed;
