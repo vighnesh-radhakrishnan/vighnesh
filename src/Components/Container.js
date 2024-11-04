@@ -150,6 +150,7 @@ export const AboutWrapper = styled.section`
   @media (min-width: 1024px) {
     padding: 0 60px;
     padding-bottom: 60px;
+    padding-top: 60px;
 
     h1 {
       font-size: 3.5rem;
@@ -282,7 +283,6 @@ export const StyledExperienceSection = styled.section`
   padding: 60px 20px;
   color: #d5def5;
   min-height: 30vh;
-  margin-top: 60px;
   margin-bottom: 60px;
 
   h1 {
@@ -439,6 +439,7 @@ export const StyledExperienceSection = styled.section`
 
   @media (min-width: 1024px) {
     padding: 0 60px;
+    padding-top: 60px;
 
     h1 {
       font-size: 3.5rem;
