@@ -428,7 +428,7 @@ export const ExperienceSection = styled.section`
       align-items: baseline;
       gap: 0.5rem;
       h2 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         color: #69dbb7;
         margin: 0;
       }
@@ -667,6 +667,98 @@ export const NavbarWrapper = styled.section`
 
   .navbar-right a .icons:hover {
     fill: #a4fbe3;
+  }
+
+  /* @media (max-width: 768px) {
+    .navbar-container {
+      flex-direction: column;
+      padding: 15px;
+    }
+
+    .navbar-left {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .navbar-left ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .navbar-left a.name {
+      font-size: 1.2rem;
+    }
+
+    .navbar-left a.pages {
+      font-size: 1rem;
+    }
+
+    .navbar-right {
+      margin-top: 10px;
+    }
+
+    .navbar-right a .icons {
+      width: 20px;
+      height: 20px;
+    }
+  } */
+
+  /* .menu-icon {
+    display: none;
+    cursor: pointer;
+  } */
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    background: #081f37;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+
+  .sidebar-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 0.8;
+  }
+
+  .sidebar-right {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .sidebar a {
+    color: #d5def5;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 15px 0;
+  }
+
+  @media (max-width: 768px) {
+    .menu-icon {
+      display: block;
+    }
+
+    .navbar-container {
+      justify-content: space-between;
+    }
+
+    .navbar-left {
+      display: none;
+    }
+
+    .navbar-right {
+      display: none;
+    }
   }
 `;
 

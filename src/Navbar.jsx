@@ -3,8 +3,15 @@ import { NavbarWrapper } from "./Components/Container";
 import { ReactComponent as GithubIcon } from "./Icons/Github.svg";
 import { ReactComponent as LinkedInIcon } from "./Icons/LinkedIn.svg";
 import { ReactComponent as MediumIcon } from "./Icons/Medium.svg";
+import { ReactComponent as MenuIcon } from "./Icons/Menu.svg";
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState("");
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
+
   const handleScroll = () => {
     const sections = document.querySelectorAll("section");
     let currentSection = "";
@@ -37,6 +44,7 @@ const Navbar = () => {
   return (
     <NavbarWrapper>
       <nav className="navbar-container">
+        <MenuIcon className="menu-icon" onClick={toggleSidebar} />
         <nav className="navbar-left">
           <a href="#" className="name">
             Vighnesh
@@ -108,6 +116,53 @@ const Navbar = () => {
           </a>
         </nav>
       </nav>
+      {isSidebarOpen && (
+        <div className="sidebar">
+          <div className="sidebar-left">
+            <a href="#" className="name">
+              Vighnesh
+            </a>
+            <a href="#home" onClick={toggleSidebar}>
+              Home
+            </a>
+            <a href="#about" onClick={toggleSidebar}>
+              About
+            </a>
+            <a href="#experience" onClick={toggleSidebar}>
+              Experience
+            </a>
+            <a href="#projects" onClick={toggleSidebar}>
+              Projects
+            </a>
+          </div>
+          <div className="sidebar-right">
+            <a
+              href="https://github.com/vikkujonsnow"
+              aria-label="GitHub"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <GithubIcon className="icons" width="19px" height="19px" />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/vighnesh-radhakrishnan-b73649191/"
+              aria-label="LinkedIn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <LinkedInIcon className="icons" width="23px" height="23px" />
+            </a>
+
+            <a
+              href="https://medium.com/@vighnesh7radhakrishnan"
+              aria-label="Medium"
+            >
+              <MediumIcon width="23px" height="23px" />
+            </a>
+          </div>
+        </div>
+      )}
     </NavbarWrapper>
   );
 };
