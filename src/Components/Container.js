@@ -545,3 +545,70 @@ export const GradientBackground = styled.div`
   ); */
   background: #081f37;
 `;
+
+export const ProjectGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+`;
+
+export const ProjectCard = styled.div`
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  text-align: left;
+  transition: transform 0.3s ease, background 0.3s ease;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+  text-align: center;
+
+  &:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.12);
+  }
+
+  .github-link {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    color: #69dbb7;
+    margin-bottom: 10px;
+  }
+
+  p {
+    color: #c8d4f4;
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+
+  .tech-stack {
+    font-size: 0.875rem;
+    color: #5fc9f3;
+    margin-top: 10px;
+  }
+
+  .icons {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    gap: 10px;
+    color: #69dbb7;
+
+    a {
+      color: inherit;
+      font-size: 1.2rem;
+      transition: color 0.3s;
+
+      &:hover {
+        color: #5fc9f3;
+      }
+    }
+  }
+`;
