@@ -16,7 +16,7 @@ const experiences = {
   experience2: {
     heading1: "Intern at",
     heading2: "Melwire Rolling (Pvt) Ltd",
-    time: "June 2020 - July 2020",
+    time: "June 2019 - July 2019",
     description: [
       "Gained hands-on experience in key concepts such as Rolling Mill operations, Industrial Networking, PLC Programming, Instrumentation, and Industrial Automation.",
       "Utilized technologies including Siemens PLC, Profibus, and Profinet to enhance understanding of automation processes.",
