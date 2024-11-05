@@ -335,6 +335,7 @@ export const HomeWrapper = styled.section`
 
   @media (max-width: 480px) {
     height: 70vh;
+    padding-top: 40px;
     h1 {
       font-size: 2.5rem;
     }
@@ -727,7 +728,7 @@ export const NavbarWrapper = styled.section`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-grow: 0.8;
+    flex-grow: 0.7;
   }
 
   .sidebar-right {
