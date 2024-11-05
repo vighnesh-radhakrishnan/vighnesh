@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/vighnesh/static/css/main.c7dfcfae.css",
-    "main.js": "/vighnesh/static/js/main.ce4e60b5.js",
+    "main.js": "/vighnesh/static/js/main.1cee1f5e.js",
     "static/js/453.6a0d684f.chunk.js": "/vighnesh/static/js/453.6a0d684f.chunk.js",
     "index.html": "/vighnesh/index.html",
     "static/media/Github.svg": "/vighnesh/static/media/Github.88069da821313a6a6dc6265334e739e1.svg",
@@ -9,11 +9,11 @@
     "static/media/Medium.svg": "/vighnesh/static/media/Medium.95077b5e74c0cc77c241f7a2c9ca4e43.svg",
     "static/media/Menu.svg": "/vighnesh/static/media/Menu.7e801ad4f523ab49dbd3c2bfc66fd7e5.svg",
     "main.c7dfcfae.css.map": "/vighnesh/static/css/main.c7dfcfae.css.map",
-    "main.ce4e60b5.js.map": "/vighnesh/static/js/main.ce4e60b5.js.map",
+    "main.1cee1f5e.js.map": "/vighnesh/static/js/main.1cee1f5e.js.map",
     "453.6a0d684f.chunk.js.map": "/vighnesh/static/js/453.6a0d684f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c7dfcfae.css",
-    "static/js/main.ce4e60b5.js"
+    "static/js/main.1cee1f5e.js"
   ]
 }
