@@ -651,10 +651,6 @@ export const NavbarWrapper = styled.section`
     transition: color 0.3s;
   }
 
-  .navbar-left a.pages:hover {
-    color: #a4fbe3;
-  }
-
   .navbar-right {
     display: flex;
     align-items: center;
@@ -721,6 +717,10 @@ export const NavbarWrapper = styled.section`
     padding-top: 50px;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
     z-index: 1000;
+
+    .name {
+      color: #5fc9f3;
+    }
   }
 
   .sidebar-left {
@@ -736,13 +736,19 @@ export const NavbarWrapper = styled.section`
     gap: 10px;
     align-items: center;
   }
-  .sidebar a {
+  .sidebar-left a,
+  .sidebar-right a {
     color: #d5def5;
     text-decoration: none;
     font-size: 1.2rem;
     margin: 15px 0;
-  }
+    transition: color 0.3s;
 
+    &:hover {
+      color: #69dbb7;
+      cursor: grab;
+    }
+  }
   @media (max-width: 768px) {
     .menu-icon {
       display: block;
