@@ -599,10 +599,12 @@ export const ExperienceSection = styled.section`
         white-space: nowrap;
       }
     }
-
+    .description {
+      text-align: left;
+    }
     .description li {
       font-size: 1rem;
-      padding-left: 0;
+      padding-left: 1rem;
     }
   }
 `;
