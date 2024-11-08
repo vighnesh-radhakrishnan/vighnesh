@@ -428,15 +428,17 @@ export const ExperienceSection = styled.section`
       display: flex;
       align-items: baseline;
       gap: 0.5rem;
-      h2 {
+      .work-ex-h2 {
         font-size: 1.5rem;
         color: #69dbb7;
         margin: 0;
+        white-space: nowrap;
       }
-      h3 {
+      .work-ex-h3 {
         font-size: 1.3rem;
         color: #d5def5;
         margin: 0;
+        white-space: nowrap;
       }
     }
 
@@ -587,12 +589,14 @@ export const ExperienceSection = styled.section`
 
     .content .content-heading {
       justify-content: center;
-      h2 {
+      .work-ex-h2 {
         font-size: 1rem;
+        white-space: nowrap;
       }
 
-      h3 {
+      .work-ex-h3 {
         font-size: 1rem;
+        white-space: nowrap;
       }
     }
 

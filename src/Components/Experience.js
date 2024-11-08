@@ -64,8 +64,8 @@ const Experience = () => {
         </div>
         <div className="content">
           <div className="content-heading">
-            <h3>{activeExperience.heading1}</h3>
-            <h2>{activeExperience.heading2}</h2>
+            <span className="work-ex-h3">{activeExperience.heading1}</span>
+            <span className="work-ex-h2">{activeExperience.heading2}</span>
           </div>
           <p className="time">{activeExperience.time}</p>
           <ul className="description">
