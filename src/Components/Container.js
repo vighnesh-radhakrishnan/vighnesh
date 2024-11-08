@@ -159,7 +159,7 @@ export const AboutWrapper = styled.section`
     }
 
     p {
-      font-size: 1rem;
+      font-size: 1.4rem;
     }
   }
 
