@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <HomeWrapper id="home">
       <h1>
-        Hey there!, I'm <span className="name-text">Vighnesh</span>
+        Hey there, I'm <span className="name-text">Vighnesh</span>
         <span className="cursor">|</span>
       </h1>
       <p className="intro-text">I make things. Sometimes, they even work.</p>

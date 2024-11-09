@@ -11,7 +11,7 @@ export const StyledSection = styled.section`
 
   h1 {
     font-size: 3.5rem;
-    color: #f0f4ff;
+    color: #c7d3fa;
     margin-bottom: 30px;
     animation: fadeIn 1s ease-out;
     font-family: "NTR";
@@ -51,7 +51,7 @@ export const AboutWrapper = styled.section`
 
   h1 {
     font-size: 3.5rem;
-    color: #f0f4ff;
+    color: #c7d3fa;
     margin-bottom: 20px;
     animation: fadeIn 1s ease-out;
     font-family: "NTR";
@@ -205,7 +205,7 @@ export const HomeWrapper = styled.section`
   h1 {
     font-size: 4.5rem;
     line-height: 1.2;
-    color: #f0f4ff;
+    color: #c7d3fa;
     margin-bottom: 10px;
   }
 
@@ -374,7 +374,7 @@ export const ExperienceSection = styled.section`
 
   h1 {
     font-size: 3.5rem;
-    color: #f0f4ff;
+    color: #c7d3fa;
     margin-bottom: 20px;
     animation: fadeIn 1s ease-out;
     font-family: "NTR";
