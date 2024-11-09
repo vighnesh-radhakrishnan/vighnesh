@@ -21,7 +21,7 @@ export const StyledSection = styled.section`
     font-size: 1.2rem;
     text-align: center;
     max-width: 800px;
-    color: #d5def5;
+    color: #a6bce3;
   }
 
   @media (max-width: 480px) {
@@ -60,7 +60,7 @@ export const AboutWrapper = styled.section`
   p {
     font-size: 1.5rem;
     max-width: 700px;
-    color: #c8d4f4;
+    color: #a6bce3;
     margin: 5px 0;
     line-height: 1.6;
     animation: slideIn 1s ease-out;
@@ -250,7 +250,7 @@ export const HomeWrapper = styled.section`
       /* text-transform: uppercase; */
       /* background: linear-gradient(135deg, #5fc9f3, #69dbb7); */
       -webkit-background-clip: text;
-      color: #c8d4f4;
+      color: #a6bce3;
     }
 
     ul {
@@ -403,7 +403,7 @@ export const ExperienceSection = styled.section`
     position: relative;
     padding: 1rem 1.5rem;
     background: transparent;
-    color: #c8d4f4;
+    color: #a6bce3;
     border: none;
     font-size: 1.2rem;
     text-align: left;
@@ -458,7 +458,7 @@ export const ExperienceSection = styled.section`
       line-height: 1.7;
       list-style-type: none;
       padding-left: 0;
-
+      color: #a6bce3;
       li {
         position: relative;
         padding-left: 1.5rem;
@@ -777,7 +777,7 @@ export const NavbarWrapper = styled.section`
 export const FooterWrapper = styled.footer`
   width: 100%;
   padding: 20px 0;
-  color: #d5def5;
+  color: #a6bce3;
   text-align: center;
   font-size: 0.8rem;
   bottom: 0;
@@ -840,7 +840,7 @@ export const ProjectCard = styled.div`
   }
 
   p {
-    color: #c8d4f4;
+    color: #a6bce3;
     font-size: 1rem;
     margin-bottom: 15px;
   }
