@@ -207,10 +207,12 @@ export const HomeWrapper = styled.section`
     line-height: 1.2;
     color: #c7d3fa;
     margin-bottom: 10px;
+    font-weight: normal;
   }
 
   .name-text {
     color: #69dbb7;
+    font-weight: 600;
   }
 
   .intro-text {
