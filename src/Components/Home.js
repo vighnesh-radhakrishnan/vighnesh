@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 import { HomeWrapper } from "./Container";
 const Home = () => {
   return (
