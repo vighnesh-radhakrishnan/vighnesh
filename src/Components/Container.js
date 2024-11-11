@@ -164,7 +164,7 @@ export const AboutWrapper = styled.section`
   }
 
   @media (max-width: 480px) {
-    padding-top: 45px;
+    padding-top: 55px;
     h1 {
       font-size: 2.5rem;
     }
