@@ -15,13 +15,12 @@ const Navbar = () => {
   const handleScroll = () => {
     const sections = document.querySelectorAll("section");
     let currentSection = "";
-    const navbarHeight = 100; // Adjust this value to match your navbar height
+    const navbarHeight = 100;
 
     sections.forEach((section) => {
       const sectionTop = section.getBoundingClientRect().top;
       const sectionBottom = section.getBoundingClientRect().bottom;
 
-      // Check if the section is in view and not cropped by the navbar
       if (sectionTop >= 0 && sectionTop < window.innerHeight / 2) {
         currentSection = section.getAttribute("id");
       } else if (
@@ -41,6 +40,21 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 768 && isSidebarOpen) {
+        setIsSidebarOpen(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [isSidebarOpen]);
+
   return (
     <NavbarWrapper>
       <nav className="navbar-container">
