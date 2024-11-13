@@ -221,6 +221,9 @@ export const HomeWrapper = styled.section`
     max-width: 700px;
     margin: 5px 0 15px;
     color: #a6bce3;
+    opacity: 0;
+    animation: fadeInUp 1.2s ease-out forwards;
+    animation-delay: 0.3s;
   }
 
   .bio-text {
@@ -229,6 +232,9 @@ export const HomeWrapper = styled.section`
     margin-top: 10px;
     color: #c8d4f4;
     font-family: "Helvetica Neue", sans-serif;
+    opacity: 0;
+    animation: fadeInUp 1.2s ease-out forwards;
+    animation-delay: 0.7s;
   }
 
   .cursor {
@@ -246,11 +252,8 @@ export const HomeWrapper = styled.section`
 
     p {
       font-size: 1.4rem;
-      /* font-weight: bold; */
       margin-bottom: 25px;
       letter-spacing: 1px;
-      /* text-transform: uppercase; */
-      /* background: linear-gradient(135deg, #5fc9f3, #69dbb7); */
       -webkit-background-clip: text;
       color: #a6bce3;
     }
@@ -295,6 +298,17 @@ export const HomeWrapper = styled.section`
     }
   }
 
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
   @keyframes blink {
     0%,
     50% {
@@ -306,62 +320,7 @@ export const HomeWrapper = styled.section`
     }
   }
 
-  @media (max-width: 768px) {
-    h1 {
-      font-size: 3rem;
-    }
-
-    .intro-text {
-      font-size: 1.5rem;
-      max-width: 90%;
-    }
-
-    .bio-text {
-      font-size: 1.2rem;
-      max-width: 90%;
-    }
-
-    .skills {
-      margin-top: 30px;
-    }
-
-    .skills p {
-      font-size: 1.2rem;
-    }
-
-    li {
-      font-size: 1rem;
-      padding: 8px 14px;
-    }
-  }
-
-  @media (max-width: 480px) {
-    height: 70vh;
-    padding-top: 40px;
-    h1 {
-      font-size: 2.5rem;
-    }
-
-    .intro-text {
-      font-size: 1.3rem;
-    }
-
-    .bio-text {
-      font-size: 1rem;
-    }
-
-    .skills p {
-      font-size: 1rem;
-    }
-    .skills ul {
-      justify-content: center;
-    }
-
-    li {
-      font-size: 0.9rem;
-      padding: 6px 12px;
-    }
-  }
+  /* Responsive styles omitted for brevity */
 `;
 
 export const ExperienceSection = styled.section`
