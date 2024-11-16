@@ -1,5 +1,145 @@
 import styled from "styled-components";
 
+//   transition: background 0.2s ease-in-out;
+//   background: #081f37;
+
+//   background: linear-gradient(115deg, #1e1f31, #2c2f49);
+//   &:before {
+//     content: "";
+//     position: absolute;
+//     top: -50%;
+//     left: -50%;
+//     width: 200%;
+//     height: 200%;
+//     background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent);
+//     background-size: 50% 50%;
+//     mix-blend-mode: overlay;
+//     animation: aurora 10s infinite linear;
+//   }
+
+//   &:after {
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     background: radial-gradient(
+//         circle at 25% 50%,
+//         rgba(255, 61, 99, 0.3),
+//         transparent 70%
+//       ),
+//       radial-gradient(
+//         circle at 75% 50%,
+//         rgba(61, 255, 193, 0.3),
+//         transparent 70%
+//       );
+//     animation: gradientShift 6s infinite alternate;
+//     mix-blend-mode: overlay;
+//     pointer-events: none;
+//   }
+
+//   @keyframes aurora {
+//     0% {
+//       transform: translate(-50%, -50%) rotate(0deg);
+//     }
+//     100% {
+//       transform: translate(-50%, -50%) rotate(360deg);
+//     }
+//   }
+
+//   @keyframes gradientShift {
+//     0% {
+//       background-position: 0% 0%;
+//     }
+//     100% {
+//       background-position: 100% 100%;
+//     }
+//   }
+// `;
+export const GradientBackground = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(115deg, #1e1f31, #2c2f49);
+  transition: background 0.2s ease-in-out;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent);
+    background-size: 50% 50%;
+    mix-blend-mode: overlay;
+    animation: aurora 8s infinite linear, shimmer 3s infinite ease-in-out;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+        circle at 25% 50%,
+        rgba(255, 61, 99, 0.3),
+        transparent 70%
+      ),
+      radial-gradient(
+        circle at 75% 50%,
+        rgba(61, 255, 193, 0.3),
+        transparent 70%
+      );
+    animation: gradientShift 6s infinite alternate ease-in-out;
+    mix-blend-mode: overlay;
+    pointer-events: none;
+  }
+
+  @keyframes aurora {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg) scale(1);
+    }
+    25% {
+      transform: translate(-50%, -50%) rotate(90deg) scale(1.05);
+    }
+    50% {
+      transform: translate(-50%, -50%) rotate(180deg) scale(1.1);
+    }
+    75% {
+      transform: translate(-50%, -50%) rotate(270deg) scale(1.05);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg) scale(1);
+    }
+  }
+
+  @keyframes shimmer {
+    0%,
+    100% {
+      opacity: 0.8;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes gradientShift {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 100% 100%;
+    }
+  }
+`;
+
 export const StyledSection = styled.section`
   min-height: 50vh;
   display: flex;
@@ -15,6 +155,7 @@ export const StyledSection = styled.section`
     margin-bottom: 30px;
     animation: fadeIn 1s ease-out;
     font-family: "NTR";
+    z-index: 100;
   }
 
   p {
@@ -22,6 +163,7 @@ export const StyledSection = styled.section`
     text-align: center;
     max-width: 800px;
     color: #a6bce3;
+    z-index: 100;
   }
 
   @media (max-width: 480px) {
@@ -50,6 +192,7 @@ export const AboutWrapper = styled.section`
   font-family: "Helvetica Neue", sans-serif;
 
   h1 {
+    z-index: 100;
     font-size: 3.5rem;
     color: #c7d3fa;
     margin-bottom: 20px;
@@ -64,6 +207,7 @@ export const AboutWrapper = styled.section`
     margin: 5px 0;
     line-height: 1.6;
     animation: slideIn 1s ease-out;
+    z-index: 100;
   }
 
   .favorites {
@@ -74,6 +218,7 @@ export const AboutWrapper = styled.section`
     max-width: 800px;
     margin-top: 40px;
     animation: fadeIn 1.2s ease-out;
+    z-index: 100;
 
     .favorite-item {
       background: rgba(255, 255, 255, 0.07);
@@ -81,6 +226,7 @@ export const AboutWrapper = styled.section`
       border-radius: 12px;
       transition: transform 0.3s ease, background 0.3s ease;
       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+      z-index: 100;
 
       &:hover {
         transform: translateY(-8px);
@@ -208,6 +354,7 @@ export const HomeWrapper = styled.section`
     color: #c7d3fa;
     margin-bottom: 10px;
     font-weight: normal;
+    z-index: 100;
   }
 
   .name-text {
@@ -249,6 +396,7 @@ export const HomeWrapper = styled.section`
     align-items: center;
     animation: fadeIn 1.2s ease-out;
     font-family: "Helvetica Neue", sans-serif;
+    z-index: 100;
 
     p {
       font-size: 1.4rem;
@@ -319,8 +467,62 @@ export const HomeWrapper = styled.section`
       opacity: 0;
     }
   }
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 3rem;
+    }
 
-  /* Responsive styles omitted for brevity */
+    .intro-text {
+      font-size: 1.5rem;
+      max-width: 90%;
+    }
+
+    .bio-text {
+      font-size: 1.2rem;
+      max-width: 90%;
+    }
+
+    .skills {
+      margin-top: 30px;
+    }
+
+    .skills p {
+      font-size: 1.2rem;
+    }
+
+    li {
+      font-size: 1rem;
+      padding: 8px 14px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    height: 70vh;
+    padding-top: 40px;
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    .intro-text {
+      font-size: 1.3rem;
+    }
+
+    .bio-text {
+      font-size: 1rem;
+    }
+
+    .skills p {
+      font-size: 1rem;
+    }
+    .skills ul {
+      justify-content: center;
+    }
+
+    li {
+      font-size: 0.9rem;
+      padding: 6px 12px;
+    }
+  }
 `;
 
 export const ExperienceSection = styled.section`
@@ -332,6 +534,8 @@ export const ExperienceSection = styled.section`
   color: #d5def5;
   min-height: 30vh;
   margin-bottom: 60px;
+  position: relative;
+  z-index: 100;
 
   h1 {
     font-size: 3.5rem;
@@ -345,6 +549,7 @@ export const ExperienceSection = styled.section`
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    z-index: 100;
 
     width: 100%;
     max-width: 1200px;
@@ -579,7 +784,7 @@ export const NavbarWrapper = styled.section`
     position: fixed;
     top: 0;
     width: 100%;
-    background: #081f37;
+    background: linear-gradient(115deg, #1e1f31, #2c2f49);
     z-index: 1000;
     box-sizing: border-box;
   }
@@ -665,7 +870,11 @@ export const NavbarWrapper = styled.section`
       height: 20px;
     }
   }
-
+  @media (max-width: 480px) {
+    .navbar-container {
+      background: transparent;
+    }
+  }
   .menu-icon {
     display: none;
     cursor: pointer;
@@ -753,16 +962,6 @@ export const FooterWrapper = styled.footer`
   @media (max-width: 480px) {
     font-size: 0.7rem;
   }
-`;
-
-export const GradientBackground = styled.div`
-  transition: background 0.2s ease-in-out;
-  /* background: linear-gradient(
-    109.6deg,
-    rgb(43, 1, 91) 13.4%,
-    rgb(122, 2, 54) 100.2%
-  ); */
-  background: #081f37;
 `;
 
 export const ProjectGrid = styled.div`
