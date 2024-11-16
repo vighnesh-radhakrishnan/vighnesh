@@ -829,13 +829,73 @@ export const NavbarWrapper = styled.section`
     right: 0;
     width: 250px;
     height: 100vh;
-    background: #081f37;
+    background: linear-gradient(115deg, #1e1f31, #2c2f49);
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 50px;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
     z-index: 1000;
+    overflow: hidden;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(
+        circle,
+        rgba(255, 255, 255, 0.1),
+        transparent
+      );
+      background-size: 50% 50%;
+      mix-blend-mode: overlay;
+      animation: aurora 10s infinite linear;
+      z-index: -1;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(
+          circle at 25% 50%,
+          rgba(255, 61, 99, 0.3),
+          transparent 70%
+        ),
+        radial-gradient(
+          circle at 75% 50%,
+          rgba(61, 255, 193, 0.3),
+          transparent 70%
+        );
+      animation: gradientShift 6s infinite alternate;
+      mix-blend-mode: overlay;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    @keyframes aurora {
+      0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+      }
+      100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+      }
+    }
+
+    @keyframes gradientShift {
+      0% {
+        background-position: 0% 0%;
+      }
+      100% {
+        background-position: 100% 100%;
+      }
+    }
 
     .name {
       color: #5fc9f3;
