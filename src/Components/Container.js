@@ -378,7 +378,7 @@ export const HomeWrapper = styled.section`
     li {
       font-size: 1.1rem;
       color: #69dbb7;
-      background: linear-gradient(135deg, #333f58, #2e3547);
+      /* background: linear-gradient(135deg, #333f58, #2e3547); */
       padding: 10px 18px;
       border-radius: 25px;
       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
@@ -386,6 +386,7 @@ export const HomeWrapper = styled.section`
       cursor: pointer;
       display: flex;
       align-items: center;
+      background: rgba(255, 255, 255, 0.07);
 
       &:hover {
         transform: translateY(-5px) scale(1.05);
