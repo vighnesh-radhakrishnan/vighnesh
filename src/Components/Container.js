@@ -872,6 +872,7 @@ export const NavbarWrapper = styled.section`
       opacity: 0.9;
       mix-blend-mode: screen;
       animation: auroraFlow 10s infinite alternate ease-in-out;
+      z-index: -1;
     }
 
     &:after {
@@ -899,6 +900,7 @@ export const NavbarWrapper = styled.section`
       mix-blend-mode: overlay;
       animation: auroraWave 12s infinite alternate ease-in-out,
         auroraPulse 6s infinite ease-in-out;
+      z-index: -1;
     }
 
     @keyframes auroraFlow {
@@ -942,6 +944,9 @@ export const NavbarWrapper = styled.section`
       50% {
         opacity: 1.2;
       }
+    }
+    .name {
+      color: #5fc9f3;
     }
   }
 

@@ -133,7 +133,7 @@ const Navbar = () => {
       {isSidebarOpen && (
         <div className="sidebar">
           <div className="sidebar-left">
-            <a href="#" className="name">
+            <a href="#" className="name" onClick={toggleSidebar}>
               Vighnesh
             </a>
             <a href="#home" onClick={toggleSidebar}>
