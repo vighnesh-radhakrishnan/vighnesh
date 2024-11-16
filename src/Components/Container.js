@@ -865,58 +865,83 @@ export const NavbarWrapper = styled.section`
       height: 200%;
       background: radial-gradient(
         circle,
-        rgba(255, 255, 255, 0.1),
-        transparent
+        rgba(255, 255, 255, 0.15),
+        transparent 50%
       );
-      background-size: 50% 50%;
-      mix-blend-mode: overlay;
-      animation: aurora 10s infinite linear;
-      z-index: -1;
+      background-size: cover;
+      opacity: 0.9;
+      mix-blend-mode: screen;
+      animation: auroraFlow 10s infinite alternate ease-in-out;
     }
 
     &:after {
       content: "";
       position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
       background: radial-gradient(
-          circle at 25% 50%,
-          rgba(255, 61, 99, 0.3),
+          circle at 30% 50%,
+          rgba(255, 61, 99, 0.5),
           transparent 70%
         ),
         radial-gradient(
-          circle at 75% 50%,
-          rgba(61, 255, 193, 0.3),
+          circle at 70% 50%,
+          rgba(61, 255, 193, 0.5),
+          transparent 70%
+        ),
+        radial-gradient(
+          circle at 50% 75%,
+          rgba(135, 61, 255, 0.4),
           transparent 70%
         );
-      animation: gradientShift 6s infinite alternate;
       mix-blend-mode: overlay;
-      pointer-events: none;
-      z-index: -1;
+      animation: auroraWave 12s infinite alternate ease-in-out,
+        auroraPulse 6s infinite ease-in-out;
     }
 
-    @keyframes aurora {
+    @keyframes auroraFlow {
       0% {
-        transform: translate(-50%, -50%) rotate(0deg);
+        transform: translate(-50%, -50%) scale(1);
+      }
+      25% {
+        transform: translate(-40%, -40%) scale(1.1);
+      }
+      50% {
+        transform: translate(-50%, -60%) scale(1.3);
+      }
+      75% {
+        transform: translate(-60%, -50%) scale(1.1);
       }
       100% {
-        transform: translate(-50%, -50%) rotate(360deg);
+        transform: translate(-50%, -50%) scale(1);
       }
     }
 
-    @keyframes gradientShift {
+    @keyframes auroraWave {
       0% {
-        background-position: 0% 0%;
+        transform: translate(0, 0) scale(1);
+        filter: hue-rotate(0deg);
+      }
+      50% {
+        transform: translate(20%, -20%) scale(1.4);
+        filter: hue-rotate(60deg);
       }
       100% {
-        background-position: 100% 100%;
+        transform: translate(-20%, 20%) scale(1);
+        filter: hue-rotate(0deg);
       }
     }
 
-    .name {
-      color: #5fc9f3;
+    @keyframes auroraPulse {
+      0%,
+      100% {
+        opacity: 0.7;
+      }
+      50% {
+        opacity: 1.2;
+      }
     }
   }
 
