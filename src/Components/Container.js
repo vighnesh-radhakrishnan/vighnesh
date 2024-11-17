@@ -1042,6 +1042,7 @@ export const ProjectCard = styled.div`
     justify-content: flex-end;
     padding-right: 10px;
     padding-bottom: 10px;
+    gap: 10px;
   }
 
   h3 {

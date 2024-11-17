@@ -1,6 +1,7 @@
 import React from "react";
 import { StyledSection, ProjectCard, ProjectGrid } from "./Container";
 import { ReactComponent as GithubIcon } from "../Icons/Github.svg";
+import { ReactComponent as OpenInNewTabIcon } from "../Icons/OpenInNewTabIcon.svg";
 
 const projects = [
   {
@@ -9,6 +10,7 @@ const projects = [
       "A React app to calculate the average price of stocks based on inputted prices and quantities, with options to delete purchases.",
     tech: "React, JavaScript, HTML/CSS",
     github: "https://github.com/vikkujonsnow/stock-average-calculator",
+    appLink: "https://vikkujonsnow.github.io/stock-average-calculator/",
   },
   {
     title: "Personal Website",
@@ -16,6 +18,7 @@ const projects = [
       "A digital portfolio showcasing my work, experiences, and a way to connect. Built with modern web technologies, it reflects my technical skills and creative side.",
     tech: "React, JavaScript, HTML/CSS",
     github: "https://github.com/vikkujonsnow/vighnesh",
+    appLink: "",
   },
 ];
 
@@ -27,6 +30,15 @@ const Projects = () => (
       {projects.map((project, index) => (
         <ProjectCard key={index}>
           <div className="github-link">
+            {project.appLink !== "" && (
+              <a
+                href={project.appLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <OpenInNewTabIcon width="30px" height="30px" />
+              </a>
+            )}
             <a href={project.github} target="_blank" rel="noopener noreferrer">
               <GithubIcon width="24px" height="24px" />
             </a>
