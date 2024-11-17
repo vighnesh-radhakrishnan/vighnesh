@@ -1043,6 +1043,7 @@ export const ProjectCard = styled.div`
     padding-right: 10px;
     padding-bottom: 10px;
     gap: 10px;
+    align-items: center;
   }
 
   h3 {
