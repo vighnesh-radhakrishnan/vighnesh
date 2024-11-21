@@ -6,12 +6,14 @@ const About = () => (
   <AboutWrapper id="about">
     <h1>/ about me</h1>
     <p>
-      I’m currently a Software Developer at View26, where I focus on crafting
-      seamless user experiences and building scalable software solutions.
+      I’m a Software Engineer at View26, where I tackle challenges and design
+      products that people love to use, focusing on creating seamless
+      experiences that make a real impact.
     </p>
     <p>
-      Outside of work, I unwind with good music, a great book, epic video games,
-      and catching up on football and Formula 1.
+      When I’m not coding, I enjoy music, reading a good book, watching movies,
+      and playing video games. I’m also a big sports fan, always rooting for my
+      teams in football and Formula 1.
     </p>
     <p>Here are some of my favorite things:</p>
 
