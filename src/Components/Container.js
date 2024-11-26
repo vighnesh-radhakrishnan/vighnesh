@@ -748,6 +748,7 @@ export const NavbarWrapper = styled.section`
     background: linear-gradient(115deg, #1e1f31, #2c2f49);
     z-index: 1000;
     box-sizing: border-box;
+    background: #1e1f31;
   }
 
   .navbar-left {
