@@ -265,7 +265,7 @@ export const AboutWrapper = styled.section`
     }
 
     p {
-      font-size: 1.4rem;
+      font-size: 1.3rem;
     }
   }
 
@@ -293,7 +293,7 @@ export const AboutWrapper = styled.section`
     }
 
     p {
-      font-size: 1.4rem;
+      font-size: 1.3rem;
     }
   }
 `;
@@ -334,7 +334,7 @@ export const HomeWrapper = styled.section`
   }
 
   .bio-text {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     max-width: 600px;
     margin-top: 10px;
     color: #c8d4f4;
@@ -359,7 +359,7 @@ export const HomeWrapper = styled.section`
     z-index: 100;
 
     p {
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       margin-bottom: 25px;
       letter-spacing: 1px;
       -webkit-background-clip: text;
