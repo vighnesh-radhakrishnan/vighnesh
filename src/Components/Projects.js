@@ -9,15 +9,17 @@ const projects = [
     description:
       "A React app to calculate the average price of stocks based on inputted prices and quantities, with options to delete purchases.",
     tech: "React, JavaScript, HTML/CSS",
-    github: "https://github.com/vikkujonsnow/stock-average-calculator",
-    appLink: "https://vikkujonsnow.github.io/stock-average-calculator/",
+    github:
+      "https://github.com/vighnesh-radhakrishnan/stock-average-calculator",
+    appLink:
+      "https://vighnesh-radhakrishnan.github.io/stock-average-calculator/",
   },
   {
     title: "Personal Website",
     description:
       "A digital portfolio showcasing my work, experiences, and a way to connect. Built with modern web technologies, it reflects my technical skills and creative side.",
     tech: "React, JavaScript, HTML/CSS",
-    github: "https://github.com/vikkujonsnow/vighnesh",
+    github: "https://github.com/vighnesh-radhakrishnan/vighnesh",
     appLink: "",
   },
 ];

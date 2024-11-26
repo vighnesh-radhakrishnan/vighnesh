@@ -105,7 +105,7 @@ const Navbar = () => {
 
         <nav className="navbar-right">
           <a
-            href="https://github.com/vikkujonsnow"
+            href="https://github.com/vighnesh-radhakrishnan"
             aria-label="GitHub"
             target="_blank"
             rel="noopener noreferrer"
@@ -151,7 +151,7 @@ const Navbar = () => {
           </div>
           <div className="sidebar-right">
             <a
-              href="https://github.com/vikkujonsnow"
+              href="https://github.com/vighnesh-radhakrishnan"
               aria-label="GitHub"
               target="_blank"
               rel="noopener noreferrer"
