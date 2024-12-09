@@ -21,6 +21,7 @@ const Home = () => {
           <li>React</li>
           <li>Node.js</li>
           <li>C++</li>
+          <li>Python</li>
         </ul>
       </div>
     </HomeWrapper>
