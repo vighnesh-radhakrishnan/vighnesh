@@ -122,10 +122,7 @@ const Navbar = () => {
             <LinkedInIcon className="icons" width="23px" height="23px" />
           </a>
 
-          <a
-            href="https://medium.com/@vighnesh7radhakrishnan"
-            aria-label="Medium"
-          >
+          <a href="mailto:vighnesh7radhakrishnan@gmail.com" aria-label="Email">
             <MediumIcon width="23px" height="23px" />
           </a>
         </nav>
