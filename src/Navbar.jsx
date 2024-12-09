@@ -114,7 +114,7 @@ const Navbar = () => {
           </a>
 
           <a
-            href="https://www.linkedin.com/in/vighnesh-radhakrishnan/"
+            href="https://www.linkedin.com/in/vighneshradhakrishnan"
             aria-label="LinkedIn"
             target="_blank"
             rel="noopener noreferrer"
@@ -157,7 +157,7 @@ const Navbar = () => {
             </a>
 
             <a
-              href="https://www.linkedin.com/in/vighnesh-radhakrishnan/"
+              href="https://www.linkedin.com/in/vighneshradhakrishnan"
               aria-label="LinkedIn"
               target="_blank"
               rel="noopener noreferrer"
