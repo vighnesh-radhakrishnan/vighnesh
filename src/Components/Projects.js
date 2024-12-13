@@ -15,7 +15,15 @@ const projects = [
       "https://vighnesh-radhakrishnan.github.io/stock-average-calculator/",
   },
   {
-    title: "Personal Website",
+    title: "Taskatron",
+    description:
+      "A simple and interactive Telegram bot for setting reminders and scheduling sessions with ease.",
+    tech: "Python",
+    github: "https://github.com/vighnesh-radhakrishnan/vighnesh",
+    appLink: "",
+  },
+  {
+    title: "Personal Portfolio",
     description:
       "A digital portfolio showcasing my work, experiences, and a way to connect. Built with modern web technologies, it reflects my technical skills and creative side.",
     tech: "React, JavaScript, HTML/CSS",
