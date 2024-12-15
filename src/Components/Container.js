@@ -1015,10 +1015,12 @@ export const FooterWrapper = styled.footer`
     font-size: 0.7rem;
   }
 `;
-
 export const ProjectGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  ); /* Reduced minimum width */
   gap: 20px;
   padding: 20px 0;
 `;
@@ -1032,6 +1034,10 @@ export const ProjectCard = styled.div`
   transition: transform 0.3s ease, background 0.3s ease;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
   text-align: center;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   &:hover {
     transform: translateY(-5px);
@@ -1048,19 +1054,19 @@ export const ProjectCard = styled.div`
   }
 
   h3 {
-    font-size: 1.25rem;
+    font-size: 1.1rem; /* Slightly smaller font size */
     color: #69dbb7;
     margin-bottom: 10px;
   }
 
   p {
     color: #a6bce3;
-    font-size: 1rem;
-    margin-bottom: 15px;
+    font-size: 0.9rem; /* Slightly smaller font size */
+    margin-bottom: 10px; /* Reduced margin */
   }
 
   .tech-stack {
-    font-size: 0.875rem;
+    font-size: 0.8rem;
     color: #5fc9f3;
     margin-top: 10px;
   }
