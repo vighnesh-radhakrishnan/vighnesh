@@ -17,7 +17,7 @@ const projects = [
   {
     title: "Taskatron",
     description:
-      "A simple and interactive Telegram bot for setting reminders and scheduling sessions with ease.",
+      "A simple and interactive Telegram bot for setting reminders and scheduling sessions, designed to keep users organized.",
     tech: "Python",
     github: "https://github.com/vighnesh-radhakrishnan/vighnesh",
     appLink: "",
