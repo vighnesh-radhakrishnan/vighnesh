@@ -3,7 +3,7 @@ import { ExperienceSection } from "./Container";
 
 const experiences = {
   experience1: {
-    heading1: "Software Developer at ",
+    heading1: "Software Engineer at ",
     heading2: "View26 GmbH / Actiotech",
     time: "August 2021 - Present",
     description: [
