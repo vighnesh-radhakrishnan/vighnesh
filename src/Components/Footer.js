@@ -5,7 +5,7 @@ import { FooterWrapper } from "./Container";
 
 const Footer = () => (
   <FooterWrapper>
-    Built and designed by Vighnesh Radhakrishnan . All rights reserved. ©{" "}
+    Built and designed by Vighnesh Radhakrishnan. All rights reserved. ©{" "}
     {new Date().getFullYear()}
   </FooterWrapper>
 );
