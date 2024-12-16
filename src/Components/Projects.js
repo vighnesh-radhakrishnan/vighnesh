@@ -46,7 +46,7 @@ const Projects = () => (
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <OpenInNewTabIcon width="29px" height="32px" />
+                <OpenInNewTabIcon width="30px" height="29px" />
               </a>
             )}
             <a href={project.github} target="_blank" rel="noopener noreferrer">
