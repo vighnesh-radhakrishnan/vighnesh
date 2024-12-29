@@ -535,14 +535,14 @@ export const ExperienceSection = styled.section`
     font-size: 1.2rem;
     text-align: left;
     cursor: pointer;
-    transition: color 0.3s ease, border-color 0.3s ease;
+    transition: color 0.7s ease, border-color 0.7s ease;
 
     border-right: 4px solid transparent;
     &.active {
       color: #69dbb7;
       border-right-color: #69dbb7;
       font-weight: bold;
-      transition: color 0.7s ease-in-out, border-right-color 0.7 ease-in-out;
+      transition: color 0.7s ease-in-out, border-right-color 0.7s ease-in-out;
     }
   }
 
@@ -615,8 +615,8 @@ export const ExperienceSection = styled.section`
       height: 300%;
       background: rgba(105, 219, 183, 0.5);
       border-radius: 50%;
-      transform: translate(-50%, -50%) scale(0);
-      animation: rippleAnimation 0.6s ease-out;
+      transform: translate(-50%, -50%) scale(1.3);
+      animation: rippleAnimation 0.9s ease-out;
     }
   }
 
