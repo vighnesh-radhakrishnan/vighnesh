@@ -149,7 +149,7 @@ export const AboutWrapper = styled.section`
   align-items: center;
   padding: 0 20px;
   text-align: center;
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
 
   h1 {
     z-index: 100;
@@ -338,7 +338,7 @@ export const HomeWrapper = styled.section`
     max-width: 600px;
     margin-top: 10px;
     color: #c8d4f4;
-    font-family: "Helvetica Neue", sans-serif;
+    font-family: "Nunito Sans", sans-serif;
     opacity: 0;
     animation: fadeInUp 1.2s ease-out forwards;
     animation-delay: 0.7s;
@@ -355,7 +355,7 @@ export const HomeWrapper = styled.section`
     flex-direction: column;
     align-items: center;
     animation: fadeIn 1.2s ease-out;
-    font-family: "Helvetica Neue", sans-serif;
+    font-family: "Nunito Sans", sans-serif;
     z-index: 100;
 
     p {
@@ -514,7 +514,7 @@ export const ExperienceSection = styled.section`
 
     width: 100%;
     max-width: 1200px;
-    font-family: "Helvetica Neue", sans-serif;
+    font-family: "Nunito Sans", sans-serif;
   }
 
   .sidebar {
