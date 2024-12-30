@@ -361,7 +361,7 @@ export const HomeWrapper = styled.section`
     p {
       font-size: 1.3rem;
       margin-bottom: 25px;
-      letter-spacing: 1px;
+      /* letter-spacing: 1px; */
       -webkit-background-clip: text;
       color: #a6bce3;
     }
