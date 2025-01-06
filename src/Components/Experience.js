@@ -7,7 +7,7 @@ const experiences = {
     heading2: "View26 GmbH / Actiotech",
     time: "August 2021 - Present",
     description: [
-      "Led the end-to-end development of the flagship application VIEW26, utilizing D3.js, React, and TypeScript to transform complex data into visual insights.",
+      "Led the end-to-end development of the flagship application VIEW26 Charts & Reports, utilizing D3.js, React, and TypeScript to transform complex data into visual insights.",
       "Developed dynamic filter components that enhanced dashboard personalization, significantly improving reporting efficiency and usability through continuous client collaboration.",
       "Oversaw project planning, resource management, and quality assurance for various projects while mentoring junior developers in software design and development best practices.",
       "Managed the codebase to ensure high quality and collaborated with product managers, designers, and stakeholders to gather and translate project requirements.",
