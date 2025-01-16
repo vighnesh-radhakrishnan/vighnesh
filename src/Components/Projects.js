@@ -8,7 +8,7 @@ const projects = [
     title: "Anemoi",
     description:
       "A web-based interface using the FastF1 library to vizualize F1 telemetry, stats, and race data, offering real-time insights and interactive graphs.",
-    tech: "React, JavaScript, Python, Render.",
+    tech: "React, JavaScript, Python, Render",
     github: "https://github.com/vighnesh-radhakrishnan/anemoi",
     appLink: "https://vighnesh-radhakrishnan.github.io/anemoi/",
   },
