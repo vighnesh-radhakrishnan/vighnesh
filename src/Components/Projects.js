@@ -13,6 +13,14 @@ const projects = [
     appLink: "https://vighnesh-radhakrishnan.github.io/anemoi/",
   },
   {
+    title: "SlitherScript",
+    description:
+      "A simple and fun retake on the classic snake game—crafted for moments of nostalgia and a bit of a challenge!",
+    tech: "JavaScript, HTML/CSS",
+    github: "https://github.com/vighnesh-radhakrishnan/slither-script",
+    appLink: "https://vighnesh-radhakrishnan.github.io/slither-script/",
+  },
+  {
     title: "Stock Average Calculator",
     description:
       "A React app to calculate the average price of stocks based on inputted prices and quantities, with options to delete purchases.",
@@ -37,14 +45,6 @@ const projects = [
     tech: "React, JavaScript, HTML/CSS",
     github: "https://github.com/vighnesh-radhakrishnan/vighnesh",
     appLink: "",
-  },
-  {
-    title: "SlitherScript",
-    description:
-      "A simple and fun retake on the classic snake game—crafted for moments of nostalgia and a bit of a challenge!",
-    tech: "JavaScript, HTML/CSS",
-    github: "https://github.com/vighnesh-radhakrishnan/slither-script",
-    appLink: "https://vighnesh-radhakrishnan.github.io/slither-script/",
   },
 ];
 
