@@ -5,6 +5,14 @@ import { ReactComponent as OpenInNewTabIcon } from "../Icons/OpenInNewTabIcon.sv
 
 const projects = [
   {
+    title: "Anemoi",
+    description:
+      "A web-based interface using the FastF1 library to vizualize F1 telemetry, stats, and race data, offering real-time insights and interactive graphs.",
+    tech: "React, JavaScript, Python, Render.",
+    github: "https://github.com/vighnesh-radhakrishnan/anemoi",
+    appLink: "https://vighnesh-radhakrishnan.github.io/anemoi/",
+  },
+  {
     title: "Stock Average Calculator",
     description:
       "A React app to calculate the average price of stocks based on inputted prices and quantities, with options to delete purchases.",
