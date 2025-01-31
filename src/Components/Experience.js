@@ -3,8 +3,8 @@ import { ExperienceSection } from "./Container";
 
 const experiences = {
   experience1: {
-    heading1: "Software Engineer at ",
-    heading2: "View26 GmbH / Actiotech",
+    heading1: "Full Stack Engineer at ",
+    heading2: "View26 GmbH",
     time: "August 2021 - Present",
     description: [
       "Led the end-to-end development of the flagship application VIEW26 Charts & Reports, utilizing D3.js, React, and TypeScript to transform complex data into visual insights.",
