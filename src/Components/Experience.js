@@ -3,24 +3,43 @@ import { ExperienceSection } from "./Container";
 
 const experiences = {
   experience1: {
-    heading1: "Full Stack Engineer at ",
-    heading2: "View26 GmbH",
-    time: "August 2021 - Present",
-    description: [
-      "Led the end-to-end development of the flagship application VIEW26 Charts & Reports, utilizing D3.js, React, and TypeScript to transform complex data into visual insights.",
-      "Developed dynamic filter components that enhanced dashboard personalization, significantly improving reporting efficiency and usability through continuous client collaboration.",
-      "Oversaw project planning, resource management, and quality assurance for various projects while mentoring junior developers in software design and development best practices.",
-      "Managed the codebase to ensure high quality and collaborated with product managers, designers, and stakeholders to gather and translate project requirements.",
+    positions: [
+      {
+        role: "Full Stack Engineer at ",
+        company: "View26 GmbH",
+        time: "January 2025 - Present",
+        description: [
+          "Designed and developed a product analytics application to provide comprehensive insights into app performance and user behavior.",
+          "Enabled detailed analysis of user interactions, feature utilization, and engagement trends to identify undervalued features and optimize value delivery.",
+          "Integrated churn prediction metrics with proactive protocols to mitigate risks and enhance user retention.",
+        ],
+      },
+      {
+        role: "Software Engineer at",
+        company: "View26 GmbH / Actiotech",
+        time: "August 2021 - December 2024",
+        description: [
+          "Led the end-to-end development of the flagship application VIEW26 Charts & Reports, utilizing D3.js, React, and TypeScript to transform complex data into visual insights.",
+          "Oversaw project planning, resource management, and quality assurance for various projects while mentoring junior developers in software design and development best practices.",
+          "Managed the codebase to ensure high quality and collaborated with product managers, designers, and stakeholders to gather and translate project requirements.",
+        ],
+      },
     ],
+    company: "View26 GmbH",
   },
   experience2: {
-    heading1: "Intern at",
-    heading2: "Melwire Rolling (Pvt) Ltd",
-    time: "June 2019 - July 2019",
-    description: [
-      "Gained hands-on experience in key concepts such as Rolling Mill operations, Industrial Networking, PLC Programming, Instrumentation, and Industrial Automation.",
-      "Utilized technologies including Siemens PLC, Profibus, and Profinet to enhance understanding of automation processes.",
+    positions: [
+      {
+        role: "Intern at ",
+        company: "Melwire Rolling (Pvt) Ltd",
+        time: "June 2019 - July 2019",
+        description: [
+          "Gained hands-on experience in key concepts such as Rolling Mill operations, Industrial Networking, PLC Programming, Instrumentation, and Industrial Automation.",
+          "Utilized technologies including Siemens PLC, Profibus, and Profinet to enhance understanding of automation processes.",
+        ],
+      },
     ],
+    company: "Melwire Rolling (Pvt) Ltd",
   },
 };
 
@@ -58,21 +77,27 @@ const Experience = () => {
               className={`tab-button ${expKey === activeTab ? "active" : ""}`}
               onClick={() => handleTabClick(expKey)}
             >
-              {experiences[expKey].heading2}
+              {experiences[expKey].company}
             </button>
           ))}
         </div>
         <div className="content">
-          <div className="content-heading">
-            <span className="work-ex-h3">{activeExperience.heading1}</span>
-            <span className="work-ex-h2">{activeExperience.heading2}</span>
-          </div>
-          <p className="time">{activeExperience.time}</p>
-          <ul className="description">
-            {activeExperience.description.map((point, index) => (
-              <li key={index}>{point}</li>
-            ))}
-          </ul>
+          {activeExperience.positions.map((position, index) => (
+            <div className="content-box">
+              <div key={index} className="position-block">
+                <div className="content-heading">
+                  <span className="work-ex-h3">{position.role}</span>
+                  <span className="work-ex-h2">{position.company}</span>
+                </div>
+                <p className="time">{position.time}</p>
+                <ul className="description">
+                  {position.description.map((point, pointIndex) => (
+                    <li key={pointIndex}>{point}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </ExperienceSection>

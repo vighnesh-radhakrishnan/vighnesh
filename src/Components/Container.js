@@ -517,6 +517,10 @@ export const ExperienceSection = styled.section`
     font-family: "Nunito Sans", sans-serif;
   }
 
+  .content-box {
+    padding-bottom: 25px;
+  }
+
   .sidebar {
     display: flex;
     flex-direction: column;
