@@ -6,7 +6,7 @@ const About = () => (
   <AboutWrapper id="about">
     <h1>/ about me</h1>
     <p>
-      I’m a Software Engineer at View26, where I tackle challenges and design
+      I’m a Full Stack Engineer at View26, where I tackle challenges and design
       products that people love to use, focusing on creating seamless
       experiences that make a real impact.
     </p>
