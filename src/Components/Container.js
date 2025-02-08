@@ -552,8 +552,8 @@ export const ExperienceSection = styled.section`
   .curve-connector-bottom {
     position: absolute;
     left: -30px;
-    width: 15px;
-    height: 10px;
+    width: 10px;
+    height: 15px;
     border-left: 2px solid #69dbb7;
     border-bottom: 2px solid #69dbb7;
     border-radius: 0 0 0 10px;
