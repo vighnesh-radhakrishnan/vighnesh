@@ -119,7 +119,7 @@ export const StyledSection = styled.section`
   }
 
   p {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     text-align: center;
     max-width: 800px;
     color: #a6bce3;
@@ -161,7 +161,7 @@ export const AboutWrapper = styled.section`
   }
 
   p {
-    font-size: 1.5rem;
+    font-size: 1.15rem;
     max-width: 700px;
     color: #a6bce3;
     margin: 5px 0;
@@ -293,7 +293,7 @@ export const AboutWrapper = styled.section`
     }
 
     p {
-      font-size: 1.3rem;
+      font-size: 1.15rem;
     }
   }
 `;
@@ -309,7 +309,7 @@ export const HomeWrapper = styled.section`
   font-family: "NTR";
 
   h1 {
-    font-size: 4.5rem;
+    font-size: 4.3rem;
     line-height: 1.2;
     color: #c7d3fa;
     margin-bottom: 10px;
@@ -323,7 +323,7 @@ export const HomeWrapper = styled.section`
   }
 
   .intro-text {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     font-weight: 500;
     max-width: 700px;
     margin: 5px 0 15px;
@@ -334,7 +334,7 @@ export const HomeWrapper = styled.section`
   }
 
   .bio-text {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     max-width: 600px;
     margin-top: 10px;
     color: #c8d4f4;
@@ -359,7 +359,7 @@ export const HomeWrapper = styled.section`
     z-index: 100;
 
     p {
-      font-size: 1.3rem;
+      font-size: 1.15rem;
       margin-bottom: 25px;
       /* letter-spacing: 1px; */
       -webkit-background-clip: text;
@@ -501,7 +501,7 @@ export const ExperienceSection = styled.section`
   h1 {
     font-size: 3.5rem;
     color: #c7d3fa;
-    margin-bottom: 20px;
+    //margin-bottom: 20px;
     animation: fadeIn 1s ease-out;
     font-family: "NTR";
   }
@@ -610,13 +610,13 @@ export const ExperienceSection = styled.section`
       align-items: baseline;
       gap: 0.5rem;
       .work-ex-h2 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         color: #69dbb7;
         margin: 0;
         white-space: nowrap;
       }
       .work-ex-h3 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         color: #d5def5;
         margin: 0;
         white-space: nowrap;
@@ -635,7 +635,7 @@ export const ExperienceSection = styled.section`
       display: flex;
       flex-direction: column;
       gap: 0.8rem;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       line-height: 1.7;
       list-style-type: none;
       padding-left: 25px;
