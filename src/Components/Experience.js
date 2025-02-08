@@ -91,9 +91,11 @@ const Experience = () => {
               <div className="position-block">
                 <div
                   className={`${
-                    index === 0
-                      ? "curve-connector-top"
-                      : "curve-connector-bottom"
+                    activeExperience.positions.length !== 1
+                      ? index === 0
+                        ? "curve-connector-top"
+                        : "curve-connector-bottom"
+                      : ""
                   }`}
                 ></div>
                 <div className="content-heading">
