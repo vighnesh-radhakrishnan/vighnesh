@@ -535,7 +535,7 @@ export const ExperienceSection = styled.section`
     top: 30px;
     width: 2px;
     height: calc(100% - 20px);
-    background-color: #5a5a5a;
+    background-color: #69dbb7;
   }
 
   .curve-connector-top {
@@ -543,9 +543,9 @@ export const ExperienceSection = styled.section`
     left: -30px;
     width: 10px;
     height: 10px;
-    border-left: 2px solid #5a5a5a;
+    border-left: 2px solid #69dbb7;
     top: 20px;
-    border-top: 2px solid #5a5a5a;
+    border-top: 2px solid #69dbb7;
     border-radius: 10px 0 0 0;
   }
 
@@ -554,8 +554,8 @@ export const ExperienceSection = styled.section`
     left: -30px;
     width: 10px;
     height: 10px;
-    border-left: 2px solid #5a5a5a;
-    border-bottom: 2px solid #5a5a5a;
+    border-left: 2px solid #69dbb7;
+    border-bottom: 2px solid #69dbb7;
     border-radius: 0 0 0 10px;
   }
 
@@ -638,7 +638,7 @@ export const ExperienceSection = styled.section`
       font-size: 1.2rem;
       line-height: 1.7;
       list-style-type: none;
-      padding-left: 0;
+      padding-left: 25px;
       color: #a6bce3;
       li {
         position: relative;
