@@ -521,6 +521,56 @@ export const ExperienceSection = styled.section`
     padding-bottom: 25px;
   }
 
+  .position-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 30px;
+  }
+
+  .connector-line {
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 2px;
+    height: calc(100% - 20px);
+    background-color: #5a5a5a;
+  }
+
+  .curve-connector-top {
+    position: absolute;
+    left: -30px;
+    width: 10px;
+    height: 10px;
+    border-left: 2px solid #5a5a5a;
+    top: 20px;
+    border-top: 2px solid #5a5a5a;
+    border-radius: 10px 0 0 0;
+  }
+
+  .curve-connector-bottom {
+    position: absolute;
+    left: -30px;
+    width: 10px;
+    height: 10px;
+    border-left: 2px solid #5a5a5a;
+    border-bottom: 2px solid #5a5a5a;
+    border-radius: 0 0 0 10px;
+  }
+
+  .position-block {
+    position: relative;
+    padding: 10px 0;
+  }
+
+  .content-heading {
+    display: flex;
+    gap: 5px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
   .sidebar {
     display: flex;
     flex-direction: column;

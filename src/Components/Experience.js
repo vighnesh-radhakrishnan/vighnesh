@@ -83,8 +83,19 @@ const Experience = () => {
         </div>
         <div className="content">
           {activeExperience.positions.map((position, index) => (
-            <div className="content-box">
-              <div key={index} className="position-block">
+            <div key={index} className="position-wrapper">
+              {index !== activeExperience.positions.length - 1 && (
+                <div className="connector-line"></div>
+              )}
+
+              <div className="position-block">
+                <div
+                  className={`${
+                    index === 0
+                      ? "curve-connector-top"
+                      : "curve-connector-bottom"
+                  }`}
+                ></div>
                 <div className="content-heading">
                   <span className="work-ex-h3">{position.role}</span>
                   <span className="work-ex-h2">{position.company}</span>
