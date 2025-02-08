@@ -1108,6 +1108,16 @@ export const ProjectCard = styled.div`
     background: rgba(255, 255, 255, 0.12);
   }
 
+  svg.project-icon {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      fill: #69dbb7;
+      transform: translateY(-2px);
+      /* filter: drop-shadow(0 2px 4px rgba(105, 219, 183, 0.3)); */
+    }
+  }
+
   .github-link {
     display: flex;
     justify-content: flex-end;
@@ -1147,10 +1157,6 @@ export const ProjectCard = styled.div`
       color: inherit;
       font-size: 1.2rem;
       transition: color 0.3s;
-
-      &:hover {
-        color: #5fc9f3;
-      }
     }
   }
 `;
