@@ -574,15 +574,15 @@ export const ExperienceSection = styled.section`
   .sidebar {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    width: 25%;
+    gap: 0.5rem;
+    width: 23%;
     position: relative;
     border-right: 2px solid rgba(255, 255, 255, 0.1);
   }
 
   .tab-button {
     position: relative;
-    padding: 1rem 1.5rem;
+    padding: 1rem;
     background: transparent;
     color: #a6bce3;
     border: none;
@@ -602,7 +602,7 @@ export const ExperienceSection = styled.section`
 
   .content {
     flex: 1;
-    padding-left: 60px;
+    padding-left: 80px;
     position: relative;
 
     .content-heading {
