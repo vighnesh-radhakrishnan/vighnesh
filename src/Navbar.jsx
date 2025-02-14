@@ -123,7 +123,7 @@ const Navbar = () => {
           </a>
 
           <a href="mailto:vighnesh7radhakrishnan@gmail.com" aria-label="Email">
-            <MediumIcon width="23px" height="23px" />
+            <MediumIcon className="icons" width="23px" height="23px" />
           </a>
         </nav>
       </nav>

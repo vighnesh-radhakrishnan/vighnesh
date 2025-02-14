@@ -194,10 +194,11 @@ export const AboutWrapper = styled.section`
       }
 
       h3 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         color: #69dbb7;
         margin-bottom: 8px;
         font-weight: 600;
+        font-family: futura;
       }
 
       p,
@@ -862,6 +863,7 @@ export const NavbarWrapper = styled.section`
 
   .navbar-right a .icons:hover {
     fill: #a4fbe3;
+    transition: all 0.4s;
   }
 
   @media (max-width: 768px) {
