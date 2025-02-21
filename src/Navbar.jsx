@@ -4,6 +4,7 @@ import { ReactComponent as GithubIcon } from "./Icons/Github.svg";
 import { ReactComponent as LinkedInIcon } from "./Icons/LinkedIn.svg";
 import { ReactComponent as MediumIcon } from "./Icons/Medium.svg";
 import { ReactComponent as MenuIcon } from "./Icons/Menu.svg";
+import { ReactComponent as Letterboxd } from "./Icons/Letterboxd.svg";
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState("");
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -120,6 +121,15 @@ const Navbar = () => {
             rel="noopener noreferrer"
           >
             <LinkedInIcon className="icons" width="23px" height="23px" />
+          </a>
+
+          <a
+            href="https://github.com/vighnesh-radhakrishnan"
+            aria-label="Letterboxd"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Letterboxd className="icons" width="19px" height="19px" />
           </a>
 
           <a href="mailto:vighnesh7radhakrishnan@gmail.com" aria-label="Email">
