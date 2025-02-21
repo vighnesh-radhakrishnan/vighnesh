@@ -129,7 +129,11 @@ const Navbar = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Letterboxd className="icons" width="19px" height="19px" />
+            <Letterboxd
+              className="letterboxd-icons"
+              width="20px"
+              height="20px"
+            />
           </a>
 
           <a href="mailto:vighnesh7radhakrishnan@gmail.com" aria-label="Email">

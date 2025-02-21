@@ -866,6 +866,11 @@ export const NavbarWrapper = styled.section`
     transition: all 0.4s;
   }
 
+  .navbar-right a svg.letterboxd-icons .letterboxd:hover {
+    fill: #a4fbe3;
+    transition: all 0.4s;
+  }
+
   @media (max-width: 768px) {
     .navbar-container {
       padding: 20px;
