@@ -1,20 +1,21 @@
 {
   "files": {
     "main.css": "/vighnesh/static/css/main.c7dfcfae.css",
-    "main.js": "/vighnesh/static/js/main.6e8953ef.js",
+    "main.js": "/vighnesh/static/js/main.1897cb21.js",
     "static/js/453.6a0d684f.chunk.js": "/vighnesh/static/js/453.6a0d684f.chunk.js",
     "index.html": "/vighnesh/index.html",
     "static/media/OpenInNewTabIcon.svg": "/vighnesh/static/media/OpenInNewTabIcon.cc3af2d0bac2801556ba5dd485d3605d.svg",
+    "static/media/Letterboxd.svg": "/vighnesh/static/media/Letterboxd.89b415756aed7d8c778adcff4294739e.svg",
     "static/media/Github.svg": "/vighnesh/static/media/Github.88069da821313a6a6dc6265334e739e1.svg",
     "static/media/LinkedIn.svg": "/vighnesh/static/media/LinkedIn.8efbda9905a988e5ed31edfb585fe63f.svg",
     "static/media/Medium.svg": "/vighnesh/static/media/Medium.95077b5e74c0cc77c241f7a2c9ca4e43.svg",
     "static/media/Menu.svg": "/vighnesh/static/media/Menu.7e801ad4f523ab49dbd3c2bfc66fd7e5.svg",
     "main.c7dfcfae.css.map": "/vighnesh/static/css/main.c7dfcfae.css.map",
-    "main.6e8953ef.js.map": "/vighnesh/static/js/main.6e8953ef.js.map",
+    "main.1897cb21.js.map": "/vighnesh/static/js/main.1897cb21.js.map",
     "453.6a0d684f.chunk.js.map": "/vighnesh/static/js/453.6a0d684f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c7dfcfae.css",
-    "static/js/main.6e8953ef.js"
+    "static/js/main.1897cb21.js"
   ]
 }
