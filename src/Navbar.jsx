@@ -124,7 +124,7 @@ const Navbar = () => {
           </a>
 
           <a
-            href="https://github.com/vighnesh-radhakrishnan"
+            href="https://letterboxd.com/ayakashi7v/"
             aria-label="Letterboxd"
             target="_blank"
             rel="noopener noreferrer"
