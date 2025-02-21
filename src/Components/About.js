@@ -11,9 +11,8 @@ const About = () => (
       experiences that make a real impact.
     </p>
     <p>
-      When I’m not coding, I enjoy music, reading a good book, watching movies,
-      and playing video games. I’m also a big sports fan, always rooting for my
-      teams in football and Formula 1.
+      When I’m not coding, I enjoy music, books, movies, and video games. I’m
+      also a big sports fan, especially football and Formula 1.
     </p>
     <p>Here are some of my favorite things:</p>
 
