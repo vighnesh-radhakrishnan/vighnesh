@@ -178,7 +178,18 @@ const Navbar = () => {
             >
               <LinkedInIcon className="icons" width="23px" height="23px" />
             </a>
-
+            <a
+              href="https://letterboxd.com/ayakashi7v/"
+              aria-label="Letterboxd"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Letterboxd
+                className="letterboxd-icons"
+                width="20px"
+                height="20px"
+              />
+            </a>
             <a
               href="mailto:vighnesh7radhakrishnan@gmail.com"
               aria-label="Email"
