@@ -22,6 +22,7 @@ const Home = () => {
           <li>Node.js</li>
           <li>C++</li>
           <li>Python</li>
+          <li>SQL</li>
         </ul>
       </div>
     </HomeWrapper>
