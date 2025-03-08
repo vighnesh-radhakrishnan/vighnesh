@@ -869,6 +869,8 @@ export const NavbarWrapper = styled.section`
 
   .navbar-right a svg.letterboxd-icons .letterboxd:hover {
     fill: #a4fbe3;
+  }
+  svg.letterboxd-icons:hover {
     transform: translateY(-1px);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
