@@ -861,7 +861,7 @@ export const NavbarWrapper = styled.section`
     text-decoration: none;
   }
 
-  .navbar-right a:hover {
+  .navbar-right a .icons:hover {
     fill: #a4fbe3;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     transform: translateY(-2px);
