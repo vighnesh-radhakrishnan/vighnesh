@@ -863,13 +863,14 @@ export const NavbarWrapper = styled.section`
 
   .navbar-right a .icons:hover {
     fill: #a4fbe3;
+    transform: translateY(-1px);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    transform: translateY(-2px);
   }
 
   .navbar-right a svg.letterboxd-icons .letterboxd:hover {
     fill: #a4fbe3;
-    transition: all 0.4s;
+    transform: translateY(-1px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   @media (max-width: 768px) {
