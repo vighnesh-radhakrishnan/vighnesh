@@ -98,6 +98,17 @@ export const GradientBackground = styled.div`
       opacity: 1.2;
     }
   }
+
+  @keyframes fadeSlideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 `;
 
 export const StyledSection = styled.section`
@@ -138,6 +149,17 @@ export const StyledSection = styled.section`
     .skills ul {
       justify-content: center;
     }
+  }
+
+  p,
+  h1 {
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
+
+  p.visible,
+  h1.visible {
+    animation: fadeSlideUp 0.8s ease-out forwards;
   }
 `;
 
@@ -255,6 +277,27 @@ export const AboutWrapper = styled.section`
       opacity: 1;
       transform: translateX(0);
     }
+  }
+
+  p,
+  .favorites {
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
+
+  p.visible,
+  .favorites.visible {
+    animation: fadeSlideUp 0.8s ease-out forwards;
+  }
+
+  .favorite-item {
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
+
+  .favorite-item.visible {
+    animation: fadeSlideUp 0.8s ease-out forwards;
+    animation-delay: calc(0.1s * var(--item-index, 0));
   }
 
   @media (min-width: 768px) {
@@ -799,6 +842,30 @@ export const ExperienceSection = styled.section`
       padding-left: 1rem;
     }
   }
+
+  .content-wrapper {
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
+
+  .content-wrapper.visible {
+    animation: fadeSlideUp 0.8s ease-out forwards;
+  }
+
+  .sidebar,
+  .content {
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
+
+  .sidebar.visible {
+    animation: fadeSlideUp 0.8s ease-out forwards;
+  }
+
+  .content.visible {
+    animation: fadeSlideUp 0.8s ease-out forwards;
+    animation-delay: 0.2s;
+  }
 `;
 
 export const NavbarWrapper = styled.section`
@@ -1098,6 +1165,10 @@ export const ProjectGrid = styled.div`
   ); /* Reduced minimum width */
   gap: 20px;
   padding: 20px 0;
+
+  .visible {
+    animation: fadeSlideUp 0.8s ease-out forwards;
+  }
 `;
 
 export const ProjectCard = styled.div`
@@ -1169,5 +1240,13 @@ export const ProjectCard = styled.div`
       font-size: 1.2rem;
       transition: color 0.3s;
     }
+  }
+
+  opacity: 0;
+  animation-fill-mode: forwards;
+
+  &.visible {
+    animation: fadeSlideUp 0.8s ease-out forwards;
+    animation-delay: calc(0.1s * var(--item-index, 0));
   }
 `;
