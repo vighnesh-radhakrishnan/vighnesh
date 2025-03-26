@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { ExperienceSection } from "./Container";
+import { useScrollAnimation } from "./useScrollAnimation";
 
 const experiences = {
   experience1: {
@@ -46,6 +47,8 @@ const experiences = {
 const Experience = () => {
   const [activeTab, setActiveTab] = useState("experience1");
   const activeButtonRef = useRef(null);
+
+  useScrollAnimation();
 
   useEffect(() => {
     if (activeButtonRef.current) {

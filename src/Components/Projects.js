@@ -2,6 +2,7 @@ import React from "react";
 import { StyledSection, ProjectCard, ProjectGrid } from "./Container";
 import { ReactComponent as GithubIcon } from "../Icons/Github.svg";
 import { ReactComponent as OpenInNewTabIcon } from "../Icons/OpenInNewTabIcon.svg";
+import { useScrollAnimation } from "./useScrollAnimation";
 
 const projects = [
   {
@@ -48,38 +49,49 @@ const projects = [
   },
 ];
 
-const Projects = () => (
-  <StyledSection id="projects">
-    <h1>/ projects</h1>
-    <p>Check out some of the cool projects I've worked on!</p>
-    <ProjectGrid>
-      {projects.map((project, index) => (
-        <ProjectCard key={index}>
-          <div className="github-link">
-            {project.appLink !== "" && (
+const Projects = () => {
+  useScrollAnimation();
+  return (
+    <StyledSection id="projects">
+      <h1>/ projects</h1>
+      <p>Check out some of the cool projects I've worked on!</p>
+      <ProjectGrid>
+        {projects.map((project, index) => (
+          <ProjectCard key={index} className="project-card">
+            <div className="github-link">
+              {project.appLink !== "" && (
+                <a
+                  href={project.appLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <OpenInNewTabIcon
+                    className="project-icon"
+                    width="30px"
+                    height="29px"
+                  />
+                </a>
+              )}
               <a
-                href={project.appLink}
+                href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <OpenInNewTabIcon
+                <GithubIcon
                   className="project-icon"
-                  width="30px"
-                  height="29px"
+                  width="24px"
+                  height="24px"
                 />
               </a>
-            )}
-            <a href={project.github} target="_blank" rel="noopener noreferrer">
-              <GithubIcon className="project-icon" width="24px" height="24px" />
-            </a>
-          </div>
-          <h3>{project.title}</h3>
-          <p>{project.description}</p>
-          <div className="tech-stack">{project.tech}</div>
-        </ProjectCard>
-      ))}
-    </ProjectGrid>
-  </StyledSection>
-);
+            </div>
+            <h3>{project.title}</h3>
+            <p>{project.description}</p>
+            <div className="tech-stack">{project.tech}</div>
+          </ProjectCard>
+        ))}
+      </ProjectGrid>
+    </StyledSection>
+  );
+};
 
 export default Projects;
