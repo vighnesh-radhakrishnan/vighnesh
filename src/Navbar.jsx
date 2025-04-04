@@ -68,7 +68,7 @@ const Navbar = () => {
             <li>
               <a
                 className={`pages ${activeSection === "home" ? "active" : ""}`}
-                href="/#home"
+                href="#home"
               >
                 Home
               </a>
@@ -76,7 +76,7 @@ const Navbar = () => {
             <li>
               <a
                 className={`pages ${activeSection === "about" ? "active" : ""}`}
-                href="/#about"
+                href="#about"
               >
                 About
               </a>
@@ -86,7 +86,7 @@ const Navbar = () => {
                 className={`pages ${
                   activeSection === "experience" ? "active" : ""
                 }`}
-                href="/#experience"
+                href="#experience"
               >
                 Experience
               </a>
@@ -96,7 +96,7 @@ const Navbar = () => {
                 className={`pages ${
                   activeSection === "projects" ? "active" : ""
                 }`}
-                href="/#projects"
+                href="#projects"
               >
                 Projects
               </a>
@@ -147,16 +147,16 @@ const Navbar = () => {
             <a href="#" className="name" onClick={toggleSidebar}>
               Vighnesh
             </a>
-            <a href="/#home" onClick={toggleSidebar}>
+            <a href="#home" onClick={toggleSidebar}>
               Home
             </a>
-            <a href="/#about" onClick={toggleSidebar}>
+            <a href="#about" onClick={toggleSidebar}>
               About
             </a>
-            <a href="/#experience" onClick={toggleSidebar}>
+            <a href="#experience" onClick={toggleSidebar}>
               Experience
             </a>
-            <a href="/#projects" onClick={toggleSidebar}>
+            <a href="#projects" onClick={toggleSidebar}>
               Projects
             </a>
           </div>
