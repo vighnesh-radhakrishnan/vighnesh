@@ -14,6 +14,14 @@ const projects = [
     appLink: "https://vighnesh-radhakrishnan.github.io/anemoi/",
   },
   {
+    title: "Bon Appétit",
+    description:
+      "My recipe keeper—store, edit, and add new meals all in one place, making it easy to update and reference anytime.",
+    tech: "React, JavaScript",
+    github: "https://github.com/vighnesh-radhakrishnan/bon-appetit",
+    appLink: "https://vighnesh-radhakrishnan.github.io/bon-appetit/",
+  },
+  {
     title: "SlitherScript",
     description:
       "A simple and fun retake on the classic snake game—crafted for moments of nostalgia and a bit of a challenge!",
