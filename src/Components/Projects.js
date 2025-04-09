@@ -48,7 +48,7 @@ const projects = [
     appLink: "",
   },
   {
-    title: "Vighnesh",
+    title: "Portfolio",
     description:
       "A digital portfolio showcasing my work, experiences, and a way to connect. Built with modern web technologies, it reflects my technical skills and creative side.",
     tech: "React, JavaScript, HTML/CSS",
