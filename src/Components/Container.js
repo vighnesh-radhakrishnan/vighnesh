@@ -1250,3 +1250,126 @@ export const ProjectCard = styled.div`
     animation-delay: calc(0.1s * var(--item-index, 0));
   }
 `;
+
+export const EnhancedAuroraBackground = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(125deg, #1e1f31, #2c2f49);
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: -50%;
+    width: 200%;
+    height: 200%;
+    background-image: radial-gradient(
+        circle at 50% 0%,
+        rgba(95, 201, 243, 0.4),
+        transparent 50%
+      ),
+      radial-gradient(
+        circle at 15% 50%,
+        rgba(135, 61, 255, 0.35),
+        transparent 45%
+      ),
+      radial-gradient(
+        circle at 85% 50%,
+        rgba(255, 61, 99, 0.35),
+        transparent 45%
+      ),
+      radial-gradient(
+        circle at 50% 100%,
+        rgba(105, 219, 183, 0.4),
+        transparent 50%
+      );
+    background-position: 50% 50%, 50% 50%, 50% 50%, 50% 50%;
+    background-size: 200% 200%, 200% 200%, 200% 200%, 200% 200%;
+    mix-blend-mode: soft-light;
+    animation: auroraShift 60s linear infinite;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(
+        circle at 25% 25%,
+        rgba(61, 255, 193, 0.3),
+        transparent 60%
+      ),
+      radial-gradient(
+        circle at 75% 75%,
+        rgba(255, 61, 99, 0.3),
+        transparent 60%
+      ),
+      radial-gradient(
+        circle at 75% 25%,
+        rgba(95, 201, 243, 0.3),
+        transparent 60%
+      ),
+      radial-gradient(
+        circle at 25% 75%,
+        rgba(135, 61, 255, 0.3),
+        transparent 60%
+      );
+    background-position: 50% 50%, 50% 50%, 50% 50%, 50% 50%;
+    background-size: 250% 250%, 250% 250%, 250% 250%, 250% 250%;
+    mix-blend-mode: screen;
+    filter: blur(10px);
+    animation: auroraGlow 30s ease-in-out infinite alternate;
+  }
+
+  /* Fine details layer - adds texture */
+  &::before,
+  &::after {
+    pointer-events: none;
+  }
+
+  @keyframes auroraShift {
+    0% {
+      background-position: 0% 50%, 0% 50%, 0% 50%, 0% 50%;
+    }
+    50% {
+      background-position: 150% 50%, 100% 50%, 200% 50%, 100% 50%;
+    }
+    100% {
+      background-position: 350% 50%, 250% 50%, 350% 50%, 250% 50%;
+    }
+  }
+
+  @keyframes auroraGlow {
+    0% {
+      opacity: 0.7;
+      filter: blur(10px) hue-rotate(0deg);
+      transform: scale(1);
+    }
+    50% {
+      opacity: 1;
+      filter: blur(15px) hue-rotate(30deg);
+      transform: scale(1.1);
+    }
+    100% {
+      opacity: 0.7;
+      filter: blur(10px) hue-rotate(0deg);
+      transform: scale(1);
+    }
+  }
+`;
+
+// Noise overlay to add texture (optional)
+export const NoiseOverlay = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 250 250' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  pointer-events: none;
+`;

@@ -6,12 +6,17 @@ import Projects from "./Components/Projects";
 import Footer from "./Components/Footer";
 import Navbar from "./Navbar";
 import { BrowserRouter as Router } from "react-router-dom";
-import { GradientBackground } from "./Components/Container";
+import {
+  GradientBackground,
+  EnhancedAuroraBackground,
+  NoiseOverlay,
+} from "./Components/Container";
 
 const App = () => (
   <>
     <Navbar />
-    <GradientBackground />
+    <EnhancedAuroraBackground />
+    <NoiseOverlay />
 
     <Router>
       <div>
