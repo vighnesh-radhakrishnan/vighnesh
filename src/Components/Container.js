@@ -1234,9 +1234,9 @@ export const ProjectCard = styled.div`
       color: #69dbb7;
     }
 
-    .project-icon {
+    /* .project-icon {
       transform: rotate(360deg) scale(1.2);
-    }
+    } */
   }
 
   svg.project-icon {

@@ -3,7 +3,6 @@ import { AboutWrapper } from "./Container";
 import { useScrollAnimation } from "./useScrollAnimation";
 
 function About() {
-  // Use the custom hook - you can pass additional selectors if needed
   useScrollAnimation();
 
   return (
