@@ -16,7 +16,7 @@ const projects = [
   {
     title: "Bon Appétit",
     description:
-      "My personal recipe keeper—to save, edit, and organize all my favorite meals in one place, making it easy to update, follow, and revisit anytime.",
+      "My recipe keeper—store, edit, and add new meals all in one place, making it easy to update and reference anytime.",
     tech: "React, JavaScript",
     github: "https://github.com/vighnesh-radhakrishnan/bon-appetit",
     appLink: "https://vighnesh-radhakrishnan.github.io/bon-appetit/",
