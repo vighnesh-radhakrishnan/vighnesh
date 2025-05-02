@@ -1239,13 +1239,23 @@ export const ProjectCard = styled.div`
     } */
   }
 
-  svg.project-icon {
+  /* svg.project-icon {
     transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
     fill: #c8d4f4;
 
     &:hover {
       fill: #69dbb7;
       transform: rotate(360deg) scale(1.3);
+    }
+  } */
+
+  svg.project-icon {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      fill: #69dbb7;
+      transform: translateY(-2px);
+      /* filter: drop-shadow(0 2px 4px rgba(105, 219, 183, 0.3)); */
     }
   }
 
