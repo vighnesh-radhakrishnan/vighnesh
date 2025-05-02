@@ -757,6 +757,17 @@ export const ExperienceSection = styled.section`
     }
   }
 
+  .experience-content {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .experience-content.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
   @media (min-width: 768px) {
     padding: 0 40px;
 

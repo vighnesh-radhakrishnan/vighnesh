@@ -1,6 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
 import { ExperienceSection } from "./Container";
-import { useScrollAnimation } from "./useScrollAnimation";
 
 const experiences = {
   experience1: {
@@ -46,9 +45,8 @@ const experiences = {
 
 const Experience = () => {
   const [activeTab, setActiveTab] = useState("experience1");
+  const [contentVisible, setContentVisible] = useState(true);
   const activeButtonRef = useRef(null);
-
-  useScrollAnimation();
 
   useEffect(() => {
     if (activeButtonRef.current) {
@@ -62,8 +60,21 @@ const Experience = () => {
     }
   }, [activeTab]);
 
-  const handleTabClick = (expKey) => {
-    setActiveTab(expKey);
+  const handleTabClick = (key) => {
+    if (key === activeTab) return;
+
+    // Hide content first
+    setContentVisible(false);
+
+    // Change tab after animation out completes
+    setTimeout(() => {
+      setActiveTab(key);
+
+      // Show content with new data
+      setTimeout(() => {
+        setContentVisible(true);
+      }, 50); // Small delay to ensure state has updated
+    }, 300); // Match this with your CSS transition duration
   };
 
   const activeExperience = experiences[activeTab];
@@ -85,35 +96,39 @@ const Experience = () => {
           ))}
         </div>
         <div className="content">
-          {activeExperience.positions.map((position, index) => (
-            <div key={index} className="position-wrapper">
-              {index !== activeExperience.positions.length - 1 && (
-                <div className="connector-line"></div>
-              )}
+          <div
+            className={`experience-content ${contentVisible ? "active" : ""}`}
+          >
+            {activeExperience.positions.map((position, index) => (
+              <div key={index} className="position-wrapper">
+                {index !== activeExperience.positions.length - 1 && (
+                  <div className="connector-line"></div>
+                )}
 
-              <div className="position-block">
-                <div
-                  className={`${
-                    activeExperience.positions.length !== 1
-                      ? index === 0
-                        ? "curve-connector-top"
-                        : "curve-connector-bottom"
-                      : ""
-                  }`}
-                ></div>
-                <div className="content-heading">
-                  <span className="work-ex-h3">{position.role}</span>
-                  <span className="work-ex-h2">{position.company}</span>
+                <div className="position-block">
+                  <div
+                    className={`${
+                      activeExperience.positions.length !== 1
+                        ? index === 0
+                          ? "curve-connector-top"
+                          : "curve-connector-bottom"
+                        : ""
+                    }`}
+                  ></div>
+                  <div className="content-heading">
+                    <span className="work-ex-h3">{position.role}</span>
+                    <span className="work-ex-h2">{position.company}</span>
+                  </div>
+                  <p className="time">{position.time}</p>
+                  <ul className="description">
+                    {position.description.map((point, pointIndex) => (
+                      <li key={pointIndex}>{point}</li>
+                    ))}
+                  </ul>
                 </div>
-                <p className="time">{position.time}</p>
-                <ul className="description">
-                  {position.description.map((point, pointIndex) => (
-                    <li key={pointIndex}>{point}</li>
-                  ))}
-                </ul>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </ExperienceSection>
