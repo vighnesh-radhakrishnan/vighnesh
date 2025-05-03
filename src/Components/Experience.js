@@ -74,7 +74,7 @@ const Experience = () => {
       setTimeout(() => {
         setContentVisible(true);
       }, 50); // Small delay to ensure state has updated
-    }, 300); // Match this with your CSS transition duration
+    }, 300); // Match with CSS transition duration
   };
 
   const activeExperience = experiences[activeTab];
