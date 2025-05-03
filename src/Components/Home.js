@@ -42,7 +42,7 @@ const Home = () => {
     return () => clearInterval(typingInterval);
   }, []);
 
-  // Custom CSS for tech pills
+  // CSS for tech stack
   const techPillStyle = (index) => ({
     fontSize: "1.1rem",
     color: "#69dbb7",
@@ -60,7 +60,7 @@ const Home = () => {
     margin: "5px",
   });
 
-  // This function splits the fullText into regular part and name part
+  //split the text into regular &  name
   const renderTypedText = () => {
     if (!typedText) return null;
 
@@ -83,9 +83,19 @@ const Home = () => {
 
   return (
     <HomeWrapper>
-      <h1>
-        {renderTypedText()}
-        {showCursor && <span className="cursor">|</span>}
+      <h1 style={{ position: "relative" }}>
+        <span>{renderTypedText()}</span>
+        {showCursor && (
+          <span
+            style={{
+              color: "#69dbb7",
+              position: "absolute",
+              marginLeft: "2px",
+            }}
+          >
+            |
+          </span>
+        )}
       </h1>
 
       <p className="intro-text">I make things. Sometimes, they even work.</p>
@@ -107,7 +117,7 @@ const Home = () => {
               onMouseEnter={(e) => {
                 e.currentTarget.style.transform =
                   "translateY(-5px) scale(1.05)";
-                e.currentTarget.style.background = "rgba(105, 219, 183, 0.2)"; // Modified hover background
+                e.currentTarget.style.background = "rgba(105, 219, 183, 0.2)";
                 e.currentTarget.style.color = "#fff";
                 e.currentTarget.style.boxShadow =
                   "0px 8px 15px rgba(0, 0, 0, 0.4)";
