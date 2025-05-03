@@ -82,7 +82,7 @@ const Home = () => {
   };
 
   return (
-    <HomeWrapper>
+    <HomeWrapper id="home">
       <h1 style={{ position: "relative" }}>
         <span>{renderTypedText()}</span>
         {showCursor && (
