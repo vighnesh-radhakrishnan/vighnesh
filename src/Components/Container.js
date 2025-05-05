@@ -563,7 +563,6 @@ export const ExperienceSection = styled.section`
   h1 {
     font-size: 3.5rem;
     color: #c7d3fa;
-    //margin-bottom: 20px;
     animation: fadeIn 1s ease-out;
     font-family: "NTR";
   }
@@ -573,7 +572,6 @@ export const ExperienceSection = styled.section`
     align-items: flex-start;
     justify-content: center;
     z-index: 100;
-
     width: 100%;
     max-width: 1200px;
     font-family: "Nunito Sans", sans-serif;
@@ -588,42 +586,17 @@ export const ExperienceSection = styled.section`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 30px;
-  }
-
-  .connector-line {
-    position: absolute;
-    left: 0;
-    top: 35px;
-    width: 2px;
-    height: calc(100% - 20px);
-    background-color: #69dbb7;
-  }
-
-  .curve-connector-top {
-    position: absolute;
-    left: -30px;
-    width: 10px;
-    height: 15px;
-    border-left: 2px solid #69dbb7;
-    top: 20px;
-    border-top: 2px solid #69dbb7;
-    border-radius: 10px 0 0 0;
-  }
-
-  .curve-connector-bottom {
-    position: absolute;
-    left: -30px;
-    width: 10px;
-    height: 15px;
-    border-left: 2px solid #69dbb7;
-    border-bottom: 2px solid #69dbb7;
-    border-radius: 0 0 0 10px;
   }
 
   .position-block {
     position: relative;
     padding: 10px 0;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateX(5px);
+    }
   }
 
   .content-heading {
@@ -651,9 +624,14 @@ export const ExperienceSection = styled.section`
     font-size: 1.2rem;
     text-align: left;
     cursor: pointer;
-    transition: color 0.7s ease, border-color 0.7s ease;
-
+    transition: color 0.7s ease, border-color 0.7s ease, transform 0.3s ease;
     border-right: 4px solid transparent;
+
+    &:hover {
+      /* transform: translateX(1px); */
+      color: #8eafd9;
+    }
+
     &.active {
       color: #69dbb7;
       border-right-color: #69dbb7;
@@ -671,17 +649,21 @@ export const ExperienceSection = styled.section`
       display: flex;
       align-items: baseline;
       gap: 0.5rem;
+
       .work-ex-h2 {
         font-size: 1.4rem;
         color: #69dbb7;
         margin: 0;
         white-space: nowrap;
+        letter-spacing: 0.5px;
       }
+
       .work-ex-h3 {
         font-size: 1.2rem;
         color: #d5def5;
         margin: 0;
         white-space: nowrap;
+        letter-spacing: 0.5px;
       }
     }
 
@@ -691,29 +673,34 @@ export const ExperienceSection = styled.section`
       color: #c8d4f4;
       margin-top: 0.5rem;
       margin-bottom: 1.5rem;
+      opacity: 0.9;
     }
 
     .description {
       display: flex;
       flex-direction: column;
-      gap: 0.8rem;
+      gap: 1rem;
       font-size: 1.1rem;
       line-height: 1.7;
       list-style-type: none;
-      padding-left: 25px;
+      padding-left: 5px;
       color: #a6bce3;
+
       li {
         position: relative;
-        padding-left: 1.5rem;
+        padding-left: 2rem;
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: translateX(5px);
+        }
 
         &::before {
-          content: "•";
+          content: "▹";
           color: #69dbb7;
-          font-weight: bold;
           position: absolute;
           left: 0;
-          font-size: 1.5rem;
-          line-height: 1;
+          font-size: 1.3rem;
         }
       }
     }
@@ -746,6 +733,7 @@ export const ExperienceSection = styled.section`
       opacity: 0;
     }
   }
+
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -799,6 +787,7 @@ export const ExperienceSection = styled.section`
 
   @media (max-width: 480px) {
     margin-bottom: 0;
+
     h1 {
       font-size: 2.5rem;
     }
@@ -807,12 +796,6 @@ export const ExperienceSection = styled.section`
       flex-direction: column;
       align-items: center;
       padding: 0 10px;
-    }
-
-    .curve-connector-top,
-    .curve-connector-bottom,
-    .connector-line {
-      display: none;
     }
 
     .sidebar {
@@ -838,10 +821,6 @@ export const ExperienceSection = styled.section`
       font-weight: bold;
     }
 
-    .position-wrapper {
-      padding-left: 0px;
-    }
-
     .content {
       padding-left: 0;
       text-align: center;
@@ -853,6 +832,7 @@ export const ExperienceSection = styled.section`
 
     .content .content-heading {
       justify-content: center;
+
       .work-ex-h2 {
         font-size: 1rem;
         white-space: nowrap;
@@ -863,12 +843,14 @@ export const ExperienceSection = styled.section`
         white-space: nowrap;
       }
     }
+
     .description {
       text-align: left;
     }
+
     .description li {
       font-size: 1rem;
-      padding-left: 1rem;
+      padding-left: 1.5rem;
     }
   }
 

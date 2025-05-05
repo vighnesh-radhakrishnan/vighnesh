@@ -5,7 +5,7 @@ const experiences = {
   experience1: {
     positions: [
       {
-        role: "Full Stack Engineer at ",
+        role: "Full Stack Engineer @ ",
         company: "View26 GmbH",
         time: "January 2025 - Present",
         description: [
@@ -15,7 +15,7 @@ const experiences = {
         ],
       },
       {
-        role: "Software Engineer at",
+        role: "Software Engineer @",
         company: "View26 GmbH / Actiotech",
         time: "August 2021 - December 2024",
         description: [
@@ -53,7 +53,6 @@ const Experience = () => {
       const ripple = document.createElement("span");
       ripple.classList.add("ripple");
       activeButtonRef.current.appendChild(ripple);
-
       setTimeout(() => {
         ripple.remove();
       }, 500);
@@ -62,19 +61,16 @@ const Experience = () => {
 
   const handleTabClick = (key) => {
     if (key === activeTab) return;
-
-    // Hide content first
+    // hide content first
     setContentVisible(false);
-
-    // Change tab after animation out completes
+    // change tab after animation out completes
     setTimeout(() => {
       setActiveTab(key);
-
-      // Show content with new data
+      // show content with new data
       setTimeout(() => {
         setContentVisible(true);
-      }, 50); // Small delay to ensure state has updated
-    }, 300); // Match with CSS transition duration
+      }, 50); // small delay to ensure state updation
+    }, 300); // match with CSS transition duration
   };
 
   const activeExperience = experiences[activeTab];
@@ -87,45 +83,30 @@ const Experience = () => {
           {Object.keys(experiences).map((expKey) => (
             <button
               key={expKey}
-              ref={expKey === activeTab ? activeButtonRef : null}
-              className={`tab-button ${expKey === activeTab ? "active" : ""}`}
+              className={`tab-button ${activeTab === expKey ? "active" : ""}`}
               onClick={() => handleTabClick(expKey)}
+              ref={activeTab === expKey ? activeButtonRef : null}
             >
               {experiences[expKey].company}
             </button>
           ))}
         </div>
-        <div className="content">
+        <div className={`content ${contentVisible ? "visible" : ""}`}>
           <div
             className={`experience-content ${contentVisible ? "active" : ""}`}
           >
             {activeExperience.positions.map((position, index) => (
-              <div key={index} className="position-wrapper">
-                {index !== activeExperience.positions.length - 1 && (
-                  <div className="connector-line"></div>
-                )}
-
-                <div className="position-block">
-                  <div
-                    className={`${
-                      activeExperience.positions.length !== 1
-                        ? index === 0
-                          ? "curve-connector-top"
-                          : "curve-connector-bottom"
-                        : ""
-                    }`}
-                  ></div>
-                  <div className="content-heading">
-                    <span className="work-ex-h3">{position.role}</span>
-                    <span className="work-ex-h2">{position.company}</span>
-                  </div>
-                  <p className="time">{position.time}</p>
-                  <ul className="description">
-                    {position.description.map((point, pointIndex) => (
-                      <li key={pointIndex}>{point}</li>
-                    ))}
-                  </ul>
+              <div key={index} className="position-block">
+                <div className="content-heading">
+                  <h2 className="work-ex-h2">{position.role}</h2>
+                  <h3 className="work-ex-h3">{position.company}</h3>
                 </div>
+                <div className="time">{position.time}</div>
+                <ul className="description">
+                  {position.description.map((point, pointIndex) => (
+                    <li key={pointIndex}>{point}</li>
+                  ))}
+                </ul>
               </div>
             ))}
           </div>
