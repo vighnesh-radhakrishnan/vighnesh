@@ -7,7 +7,7 @@ const experiences = {
       {
         role: "Full Stack Engineer @ ",
         company: "View26 GmbH",
-        time: "January 2025 - Present",
+        time: "JAN 2025 - PRESENT",
         description: [
           "Designed and developed a product analytics application to provide comprehensive insights into app performance and user behavior.",
           "Enabled detailed analysis of user interactions, feature utilization, and engagement trends to identify undervalued features and optimize value delivery.",
@@ -17,7 +17,7 @@ const experiences = {
       {
         role: "Software Engineer @",
         company: "View26 GmbH / Actiotech",
-        time: "August 2021 - December 2024",
+        time: "AUG 2021 - DEC 2024",
         description: [
           "Led the end-to-end development of the flagship application VIEW26 Charts & Reports, utilizing D3.js, React, and TypeScript to transform complex data into visual insights.",
           "Oversaw project planning, resource management, and quality assurance for various projects while mentoring junior developers in software design and development best practices.",
@@ -30,9 +30,9 @@ const experiences = {
   experience2: {
     positions: [
       {
-        role: "Intern at ",
+        role: "Intern @ ",
         company: "Melwire Rolling (Pvt) Ltd",
-        time: "June 2019 - July 2019",
+        time: "JUN 2019 - JUL 2019",
         description: [
           "Gained hands-on experience in key concepts such as Rolling Mill operations, Industrial Networking, PLC Programming, Instrumentation, and Industrial Automation.",
           "Utilized technologies including Siemens PLC, Profibus, and Profinet to enhance understanding of automation processes.",

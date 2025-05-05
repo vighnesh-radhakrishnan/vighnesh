@@ -648,32 +648,29 @@ export const ExperienceSection = styled.section`
     .content-heading {
       display: flex;
       align-items: baseline;
-      gap: 0.5rem;
 
       .work-ex-h2 {
-        font-size: 1.4rem;
-        color: #69dbb7;
-        margin: 0;
-        white-space: nowrap;
-        letter-spacing: 0.5px;
-      }
-
-      .work-ex-h3 {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         color: #d5def5;
         margin: 0;
         white-space: nowrap;
-        letter-spacing: 0.5px;
+        font-weight: 500;
+      }
+
+      .work-ex-h3 {
+        font-size: 1.3rem;
+        color: #69dbb7;
+        margin: 0;
+        white-space: nowrap;
       }
     }
 
     .time {
-      font-size: 1.1rem;
-      font-style: italic;
+      font-size: 1rem;
       color: #c8d4f4;
       margin-top: 0.5rem;
       margin-bottom: 1.5rem;
-      opacity: 0.9;
+      opacity: 0.6;
     }
 
     .description {
