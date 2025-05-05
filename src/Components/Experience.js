@@ -69,8 +69,8 @@ const Experience = () => {
       // show content with new data
       setTimeout(() => {
         setContentVisible(true);
-      }, 50); // small delay to ensure state updation
-    }, 300); // match with CSS transition duration
+      }, 20); // small delay to ensure state updation
+    }, 200); // match with CSS transition duration
   };
 
   const activeExperience = experiences[activeTab];

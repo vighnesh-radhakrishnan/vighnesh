@@ -270,7 +270,7 @@ export const AboutWrapper = styled.section`
 
         &:hover {
           color: #5fc9f3;
-          transform: translateX(5px);
+          /* transform: translateX(5px); */
         }
       }
     }
@@ -594,9 +594,9 @@ export const ExperienceSection = styled.section`
     margin-bottom: 10px;
     transition: all 0.3s ease;
 
-    &:hover {
+    /* &:hover {
       transform: translateX(5px);
-    }
+    } */
   }
 
   .content-heading {
@@ -691,9 +691,9 @@ export const ExperienceSection = styled.section`
         padding-left: 2rem;
         transition: transform 0.3s ease;
 
-        &:hover {
+        /* &:hover {
           transform: translateX(5px);
-        }
+        } */
 
         &::before {
           content: "▹";
