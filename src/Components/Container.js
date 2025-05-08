@@ -177,8 +177,8 @@ export const AboutWrapper = styled.section`
     font-size: 3.5rem;
     color: #c7d3fa;
     margin-bottom: 20px;
-    animation: fadeIn 1s ease-out;
     font-family: "NTR";
+    opacity: 0;
   }
   p {
     font-size: 1.15rem;
@@ -186,7 +186,7 @@ export const AboutWrapper = styled.section`
     color: #a6bce3;
     margin: 5px 0;
     line-height: 1.6;
-    animation: slideIn 1s ease-out;
+    opacity: 0;
     z-index: 100;
   }
   .favorites {
@@ -196,7 +196,7 @@ export const AboutWrapper = styled.section`
     width: 100%;
     max-width: 800px;
     margin-top: 40px;
-    animation: fadeIn 1.2s ease-out;
+    opacity: 0;
     z-index: 100;
     .favorite-item {
       background: rgba(255, 255, 255, 0.07);
@@ -313,6 +313,11 @@ export const AboutWrapper = styled.section`
     opacity: 0;
     animation-fill-mode: forwards;
   }
+
+  h1.visible {
+    animation: fadeIn 1s ease-out forwards;
+  }
+
   p.visible,
   .favorites.visible {
     animation: fadeSlideUp 0.8s ease-out forwards;
