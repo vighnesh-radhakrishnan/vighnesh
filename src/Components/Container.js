@@ -443,7 +443,7 @@ export const HomeWrapper = styled.section`
     }
 
     li {
-      font-size: 1.1rem;
+      font-size: 1rem;
       color: #69dbb7;
       /* background: linear-gradient(135deg, #333f58, #2e3547); */
       padding: 10px 18px;

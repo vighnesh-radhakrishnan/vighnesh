@@ -44,7 +44,7 @@ const Home = () => {
 
   // CSS for tech stack
   const techPillStyle = (index) => ({
-    fontSize: "1.1rem",
+    fontSize: "1rem",
     color: "#69dbb7",
     padding: "10px 18px",
     borderRadius: "25px",

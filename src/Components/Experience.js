@@ -6,7 +6,7 @@ const experiences = {
     positions: [
       {
         role: "Full Stack Engineer @ ",
-        company: "View26 GmbH",
+        company: "View26 GmbH / Actiotech LLP",
         time: "JAN 2025 - PRESENT",
         description: [
           "Designed and developed a product analytics application to provide comprehensive insights into app performance and user behavior.",
@@ -16,7 +16,7 @@ const experiences = {
       },
       {
         role: "Software Engineer @",
-        company: "View26 GmbH / Actiotech",
+        company: "View26 GmbH / Actiotech LLP",
         time: "AUG 2021 - DEC 2024",
         description: [
           "Led the end-to-end development of the flagship application VIEW26 Charts & Reports, utilizing D3.js, React, and TypeScript to transform complex data into visual insights.",
