@@ -9,11 +9,11 @@ const Home = () => {
   const [techStackVisible, setTechStackVisible] = useState(false);
   const techStack = [
     "JavaScript ES6+",
-    "TypeScript",
     "React",
+    "Python",
+    "TypeScript",
     "Node.js",
     "C++",
-    "Python",
     "SQL",
   ];
 
