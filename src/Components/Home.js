@@ -12,6 +12,8 @@ const Home = () => {
     "React",
     "Python",
     "TypeScript",
+    "Go",
+    "MongoDB",
     "Node.js",
     "C++",
     "SQL",
