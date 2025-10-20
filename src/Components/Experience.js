@@ -15,8 +15,8 @@ const experiences = {
         ],
       },
       {
-        role: "Software Engineer @",
-        company: "View26 GmbH / Actiotech LLP",
+        role: "Software Engineer",
+        company: "",
         time: "AUG 2021 - DEC 2024",
         description: [
           "Led the end-to-end development of the flagship application VIEW26 Charts & Reports, utilizing D3.js, React, and TypeScript to transform complex data into visual insights.",
