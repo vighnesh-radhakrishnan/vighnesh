@@ -7,7 +7,7 @@ const experiences = {
       {
         role: "Full Stack Engineer @ ",
         company: "View26 GmbH / Actiotech LLP",
-        time: "JAN 2025 - PRESENT",
+        time: "JAN 2025 - JUL 2025",
         description: [
           "Designed and developed a product analytics application to provide comprehensive insights into app performance and user behavior.",
           "Enabled detailed analysis of user interactions, feature utilization, and engagement trends to identify undervalued features and optimize value delivery.",
