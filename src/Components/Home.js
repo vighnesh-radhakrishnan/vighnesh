@@ -12,7 +12,7 @@ const Home = () => {
     "React",
     "Python",
     "TypeScript",
-    "Go",
+    "Golang",
     "MongoDB",
     "Node.js",
     "C++",
