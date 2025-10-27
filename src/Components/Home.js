@@ -5,7 +5,7 @@ const Home = () => {
   const [visible, setVisible] = useState(false);
   const [typedText, setTypedText] = useState("");
   const [showCursor, setShowCursor] = useState(true);
-  const fullText = "Hey there, I'm Vighnesh";
+  const fullText = "Hello there, I'm Vighnesh";
   const [techStackVisible, setTechStackVisible] = useState(false);
   const techStack = [
     "JavaScript ES6+",
