@@ -13,10 +13,10 @@ const Home = () => {
     "Python",
     "TypeScript",
     "Golang",
-    "MongoDB",
     "Node.js",
     "C++",
     "SQL",
+    "MongoDB",
   ];
 
   useEffect(() => {
