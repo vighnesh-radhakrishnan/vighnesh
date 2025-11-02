@@ -26,7 +26,7 @@ function About() {
             <li>Kendrick Lamar</li>
             <li>Twenty One Pilots</li>
             <li>Daft Punk</li>
-            <li>Ling Tosite Sigure</li>
+            <li>Tame Impala</li>
           </ul>
         </div>
         <div className="favorite-item">
