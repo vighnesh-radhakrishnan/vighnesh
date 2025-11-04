@@ -7,6 +7,7 @@ const Home = () => {
   const [showCursor, setShowCursor] = useState(true);
   const fullText = "Hello there, I'm Vighnesh";
   const [techStackVisible, setTechStackVisible] = useState(false);
+  const [skillVisisble, setSkillVisible] = useState(false);
   const techStack = [
     "JavaScript ES6+",
     "React",
@@ -34,6 +35,9 @@ const Home = () => {
         const cursorInterval = setInterval(() => {
           setShowCursor((prev) => !prev);
         }, 500);
+        const skillInterval = setInterval(() => {
+          setSkillVisible((prev) => !prev);
+        }, 600);
         // Show tech stack with delay
         setTimeout(() => {
           setTechStackVisible(true);
@@ -109,7 +113,7 @@ const Home = () => {
       </p>
 
       <div className="skills">
-        <p>Here's a peek at the tech I love to work with.</p>
+        {skillVisisble && <p>Here's a peek at the tech I love to work with.</p>}
 
         <ul>
           {techStack.map((tech, index) => (
