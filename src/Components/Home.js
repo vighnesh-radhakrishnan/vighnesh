@@ -103,7 +103,7 @@ const Home = () => {
       <p className="intro-text">I make things. Sometimes, they even work.</p>
 
       <p className="bio-text">
-        Based in Bangalore, India, I'm a Software Developer with over four years
+        Based in Bangalore, India, I'm a Software Engineer with over four years
         of experience with a flair for design and innovation. I build solutions
         that tackle real challenges and turn ideas into reality.
       </p>
