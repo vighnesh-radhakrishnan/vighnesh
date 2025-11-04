@@ -113,8 +113,15 @@ const Home = () => {
         that tackle real challenges and turn ideas into reality.
       </p>
 
-      <div className="skills">
-        {skillVisisble && <p>Here's a peek at the tech I love to work with.</p>}
+      <div
+        className="skills"
+        style={{
+          opacity: skillVisisble ? 1 : 0,
+          animation: skillVisisble ? "fadeInUp 0.8s ease-out forwards" : "none",
+          minHeight: "200px",
+        }}
+      >
+        {skillVisisble && <p>Here's a peek at the tech I love to work with</p>}
 
         <ul>
           {techStack.map((tech, index) => (

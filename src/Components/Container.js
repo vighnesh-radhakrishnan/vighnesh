@@ -421,7 +421,6 @@ export const HomeWrapper = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    animation: fadeIn 1.2s ease-out;
     font-family: "Nunito Sans", sans-serif;
     z-index: 100;
 
