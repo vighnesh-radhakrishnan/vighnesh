@@ -21,9 +21,9 @@ const Home = () => {
   ];
 
   useEffect(() => {
-    // Initial load animation
+    // initial load animation
     setVisible(true);
-    // Typing animation
+    // typing animation
     let currentIndex = 0;
     const typingInterval = setInterval(() => {
       if (currentIndex < fullText.length) {
@@ -31,14 +31,15 @@ const Home = () => {
         currentIndex++;
       } else {
         clearInterval(typingInterval);
-        // Start blinking cursor after typing
+        // start blinking cursor after typing
         const cursorInterval = setInterval(() => {
           setShowCursor((prev) => !prev);
         }, 500);
-        const skillInterval = setInterval(() => {
+        // show skill
+        setTimeout(() => {
           setSkillVisible((prev) => !prev);
         }, 600);
-        // Show tech stack with delay
+        // show tech stack with delay
         setTimeout(() => {
           setTechStackVisible(true);
         }, 800);
