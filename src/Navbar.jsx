@@ -3,6 +3,7 @@ import { NavbarWrapper } from "./Components/Container";
 import { ReactComponent as GithubIcon } from "./Icons/Github.svg";
 import { ReactComponent as LinkedInIcon } from "./Icons/LinkedIn.svg";
 import { ReactComponent as MediumIcon } from "./Icons/Medium.svg";
+import { ReactComponent as MailToIcon } from "./Icons/MailToIcon.svg";
 import { ReactComponent as MenuIcon } from "./Icons/Menu.svg";
 import { ReactComponent as Letterboxd } from "./Icons/Letterboxd.svg";
 const Navbar = () => {
@@ -137,7 +138,7 @@ const Navbar = () => {
           </a>
 
           <a href="mailto:vighnesh7radhakrishnan@gmail.com" aria-label="Email">
-            <MediumIcon className="icons" width="25px" height="25px" />
+            <MailToIcon className="icons" width="25px" height="25px" />
           </a>
         </nav>
       </nav>
@@ -194,7 +195,7 @@ const Navbar = () => {
               href="mailto:vighnesh7radhakrishnan@gmail.com"
               aria-label="Email"
             >
-              <MediumIcon width="23px" height="23px" />
+              <MailToIcon width="23px" height="23px" />
             </a>
           </div>
         </div>
