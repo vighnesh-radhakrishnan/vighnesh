@@ -12,6 +12,7 @@ const experiences = {
           "Designed and developed a product analytics application to provide comprehensive insights into app performance and user behavior.",
           "Enabled detailed analysis of user interactions, feature utilization, and engagement trends to identify undervalued features and optimize value delivery.",
           "Integrated churn prediction metrics with proactive protocols to mitigate risks and enhance user retention.",
+          "Migrated Charts & Reports from Atlassian Connect to Forge, delivering a production build ahead of schedule.",
         ],
       },
       {
