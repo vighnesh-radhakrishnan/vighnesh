@@ -20,7 +20,7 @@ const experiences = {
         company: "View26 GmbH / Actiotech LLP",
         time: "AUG 2021 - DEC 2024",
         description: [
-          "Led the end-to-end development of the flagship application VIEW26 Charts & Reports, utilizing D3.js, React, and TypeScript to transform complex data into visual insights.",
+          "Developed and maintained a leading Atlassian Marketplace app, Charts & Reports for Jira Service Management, with 1,000+ active installs across enterprise clients.",
           "Oversaw project planning, resource management, and quality assurance for various projects while mentoring junior developers in software design and development best practices.",
           "Managed the codebase to ensure high quality and collaborated with product managers, designers, and stakeholders to gather and translate project requirements.",
         ],
