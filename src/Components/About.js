@@ -70,10 +70,11 @@ function About() {
         <p>Wayne Rooney</p>
       </div> */}
         <div className="favorite-item">
-          <h3>F1</h3>
+          <h3>Formula 1</h3>
           <ul>
             <li>Ferrari</li>
             <li>Lewis Hamilton</li>
+            <li>Max Verstappen</li>
           </ul>
         </div>
       </div>
