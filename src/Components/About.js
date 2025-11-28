@@ -45,6 +45,7 @@ function About() {
             <li>Lord Of The Rings</li>
             <li>Harry Potter </li>
             <li>Cowboy Bebop</li>
+            <li>Natsume Yuujinchou</li>
             <li>Bleach</li>
           </ul>
         </div>
