@@ -35,7 +35,7 @@ function About() {
             <li>The Witcher 3</li>
             <li>Red Dead Redemption 2</li>
             <li>The Last of Us</li>
-            <li>Uncharted</li>
+            <li>Uncharted 4</li>
           </ul>
         </div>
 
