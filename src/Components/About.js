@@ -33,7 +33,7 @@ function About() {
           <h3>Games</h3>
           <ul>
             <li>The Witcher 3</li>
-            <li>Red Dead Redemption 2</li>
+            <li>Journey</li>
             <li>The Last of Us</li>
             <li>Uncharted 4</li>
           </ul>
