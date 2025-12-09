@@ -17,7 +17,7 @@ function About() {
         When I’m not coding, I enjoy music, books, movies, and video games. I’m
         also a big sports fan, especially football and Formula 1.
       </p>
-      <p>Here are some of my favorite list:</p>
+      <p>Here are some of my favorite things:</p>
 
       <div className="favorites">
         <div className="favorite-item">
