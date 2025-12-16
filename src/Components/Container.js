@@ -439,6 +439,7 @@ export const HomeWrapper = styled.section`
       padding: 0;
       margin: 0;
       flex-wrap: wrap;
+      justify-content: center;
     }
 
     li {
