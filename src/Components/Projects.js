@@ -59,7 +59,7 @@ const projects = [
     title: "Ramp's vendor Interface",
     description:
       "A clone of Ramp'w vendor section with dynamic table, sort, filter paginationa and seed data.",
-    tech: "React, JavaScript, Tailwind, Python, Postgres",
+    tech: "React, JavaScript, Tailwind, Python, PostgreSQL, FastAPI",
     github: "",
     appLink: "",
   },
