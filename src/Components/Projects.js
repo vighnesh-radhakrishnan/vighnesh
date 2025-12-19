@@ -55,6 +55,14 @@ const projects = [
     github: "https://github.com/vighnesh-radhakrishnan/vighnesh",
     appLink: "",
   },
+  {
+    title: "Ramp's vendor Interface",
+    description:
+      "A clone of Ramp'w vendor section with dynamic table, sort, filter paginationa and seed data.",
+    tech: "React, JavaScript, Tailwind, Python, Postgres",
+    github: "",
+    appLink: "",
+  },
 ];
 
 const Projects = () => {
