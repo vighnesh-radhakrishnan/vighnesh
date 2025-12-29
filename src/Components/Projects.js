@@ -60,7 +60,8 @@ const projects = [
     description:
       "A clone of Ramp'w vendor section with dynamic table, sort, filter paginationa and seed data.",
     tech: "React, JavaScript, Tailwind, Python, FastAPI, PostgreSQL",
-    github: "",
+    github:
+      "https://github.com/vighnesh-radhakrishnan/final-round-fullstack-vighnesh-radhakrishnan",
     appLink: "",
   },
 ];
