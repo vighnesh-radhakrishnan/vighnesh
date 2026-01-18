@@ -11,6 +11,7 @@ const Home = () => {
   const techStack = [
     "JavaScript ES6+",
     "React",
+    "Next",
     "Python",
     "TypeScript",
     "Golang",
